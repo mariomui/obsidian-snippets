@@ -1,34 +1,4 @@
-/* --secondary: #f000b8; */
-:root {
-  /* --accent: #37cdbe;
-  --primary: #570df8;
-  --secondary: var(--material-color-purple-a100);
-  --neutral: #3d4451;
-  --base-100: #ffffff;
-  --info: #3abff8;
-  --success: #36d399;
-  --warning: #fbbd23;
-  --error: #f87272;
-  --booksource: #8272d0; */
-  /* --material-color-red: #f44336;
-  --material-color-red-100: #ffcdd2;
-  --material-color-red-300: #e57373;
-  --material-color-red-500: var(--material-color-red);
-  --material-color-red-700: #d32f2f;
-  --material-color-red-900: #b71c1c;
-  --material-color-blue-grey: #607d8b;
-  --material-color-blue-grey-100: #cfd8dc;
-  --material-color-blue-grey-300: #90a4ae;
-  --material-color-blue-grey-500: var(--material-color-blue-grey);
-  --material-color-blue-grey-700: #455a64;
-  --material-color-blue-grey-900: #263238;
-  --material-color-brown: #795548;
-  --material-color-brown-100: #d7ccc8;
-  --material-color-brown-300: #a1887f;
-  --material-color-brown-500: var(--material-color-brown);
-  --material-color-brown-700: #5d4037;
-  --material-color-brown-900: #3e2723; */
-}
+
 /* for editor */
 .cm-quote {
   color: var(--text-normal) !important;
@@ -37,7 +7,7 @@
 /* for preview */
 .markdown-preview-view blockquote {
   border: 2px solid;
-  border-color: var(--booksource) !important;
+  border-color: var(--book-source) !important;
   border-left-width: 2px !important;
   border-radius: 8px 8px 8px 8px;
   font-size: 15px;
@@ -84,7 +54,7 @@
 /* for citations */
 
 cite {
-  background-color: var(--booksource);
+  background-color: var(--book-source);
   color: white;
   margin-left: -10px;
   margin-right: -10px;
@@ -98,7 +68,7 @@ cite a:link {
   color: white;
 }
 
-/** # custominging paraphrasing by using nested blockquotes **/
+/** # customizing paraphrasing by using nested block quotes **/
 
 /* 💀 */
 
@@ -249,7 +219,6 @@ span[alt*="nlk"].internal-embed.markdown-embed
 .markdown-source-view.mod-cm6 
 .cm-contentContainer {
   container-type: inline-size;
-
 }
 :root {
   --ui-cornell-width: 20vw;
@@ -291,14 +260,15 @@ div.markdown-embed-content
 .markdown-preview-sizer.markdown-preview-section {
   margin: 0 !important;
 }
-.markdown-reading-view
+/* .markdown-reading-view
 .callout[data-callout="ui-cornell"]
 .markdown-embed-content
 .markdown-rendered
 .markdown-preview-sizer.markdown-preview-section 
 .block-language-dataviewjs p{
-  /* width: auto !important; */
-}
+  /* width: auto !important;
+} 
+*/
 
 /*  on any width greater than normal CORNELL SIDE the callout*/
 @container (min-width : 90cqw) {
@@ -372,20 +342,21 @@ div.markdown-embed-content
 }
 
 
-.markdown-source-view 
+/* .markdown-source-view 
 .markdown-rendered 
 .callout[data-callout="ui-cornell"] 
 .callout-title .callout-title-inner{
-  /* margin-left: .5em; */
-  /* max-width: 98% !important; */
-}
-.markdown-reading-view 
+  margin-left: .5em; 
+  max-width: 98% !important;
+} */
+
+/* .markdown-reading-view 
 .markdown-rendered 
 .callout[data-callout="ui-cornell"] 
 .callout-title .callout-title-inner{
-  /* margin-left: .5em; */
-  /* max-width: 98% !important; */
-}
+  margin-left: .5em;
+  max-width: 98% !important;
+} */
 
 /* ---------   -------- */
 
@@ -409,15 +380,15 @@ div.markdown-embed-content
 
 
 /* data view container in reading view */
-.markdown-reading-view .markdown-preview-view.markdown-rendered .markdown-preview-sizer 
+/* .markdown-reading-view .markdown-preview-view.markdown-rendered .markdown-preview-sizer 
 div.block-language-dataview 
 .dataview.dataview-container {
 
-/* 
+
   background-image: var(--mm-image), var(--anu-image);
   background-attachment: fixed;
-  background-blend-mode: multiply; */
-}
+  background-blend-mode: multiply;
+} */
 /* Source view content container brightness */
 .markdown-source-view .cm-contentContainer {
   border-radius: 1.5em 1.5em;
