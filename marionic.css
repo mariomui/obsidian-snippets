@@ -296,6 +296,7 @@ progress::-moz-progress-bar {
   > :is(.cm-list-2, .cm-list-4, .cm-list-6)
 ) {
   color: var(--material-color-deep-purple-200);
+  border: 1px solid blue;
 }
 
 
