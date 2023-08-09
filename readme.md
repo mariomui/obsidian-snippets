@@ -23,3 +23,5 @@ Any updates to the structure as well as very nerdy things are included.
       - Repo is located inside of obsidian snippets folder
 
 # ---Transient
+
+- [ ] Testing sync function using fswatch to auto sync obsidian located folder to github.
