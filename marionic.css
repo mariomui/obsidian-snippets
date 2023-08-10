@@ -410,7 +410,7 @@ input.task-list-item-checkbox[type="checkbox"]:checked {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   /* background-blend-mode: screen; */
-  constrain: paint;
+  /* constrain: paint; */
 }
 
 
