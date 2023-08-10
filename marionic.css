@@ -46,7 +46,7 @@ body.is-hidden-frameless .workspace.should-maximize:not(.workspace.is-right-side
 .workspace-leaf-content
 .nav-header {
 
-  background-image: var(--mm-image), var(--anu-image);
+  background-image: var(--bg-image);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -72,7 +72,7 @@ body.is-hidden-frameless .workspace.should-maximize:not(.workspace.is-right-side
 .workspace
 .workspace-split.mod-horizontal.mod-left-split
 .workspace-leaf-content[data-type="search"] {
-  background-image: var(--mm-image), var(--anu-image);
+  background-image: var(--bg-image);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -90,7 +90,7 @@ body.is-hidden-frameless .workspace.should-maximize:not(.workspace.is-right-side
 .workspace-leaf
 .workspace-leaf-content
 .view-header {
-  background-image: var(--mm-image), var(--anu-image);
+  background-image: var(--bg-image);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -144,7 +144,7 @@ body.is-hidden-frameless .workspace.should-maximize:not(.workspace.is-right-side
 .workspace-tabs.mod-top.mod-top-right-space 
 .workspace-leaf-content 
 .view-content .empty-state{
-  background-image: var(--mm-image), var(--anu-image);
+  background-image: var(--bg-image);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -393,7 +393,7 @@ input.task-list-item-checkbox[type="checkbox"]:checked {
 
 /* ## TOP BAR FOR LEAF */
 .workspace .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-container .workspace-leaf .workspace-leaf-content .view-header {
-  background-image: var(--mm-image), var(--anu-image);
+  background-image: var(--bg-image);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -404,7 +404,7 @@ input.task-list-item-checkbox[type="checkbox"]:checked {
 .markdown-reading-view,
 .markdown-source-view,
 .workspace-leaf-content .view-content {
-  background-image: var(--mm-image), var(--anu-image);
+  background-image: var(--bg-image);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -414,7 +414,7 @@ input.task-list-item-checkbox[type="checkbox"]:checked {
 
 
 .workspace-tabs.mod-top-left-space .workspace-tab-container .workspace-leaf-content[data-type="markdown"] .view-content  {
-  background-image: var(--mm-image), var(--anu-image);
+  background-image: var(--bg-image);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -457,14 +457,14 @@ input.task-list-item-checkbox[type="checkbox"]:checked {
 
 .sidebar-toggle-button.mod-left,
 .sidebar-toggle-button.mod-right {
-  background-image: var(--mm-image), var(--anu-image);
+  background-image: var(--bg-image);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-blend-mode: var(--topbar-blend);
 }
 .workspace-tab-header-tab-list {
-  /* background-image: var(--mm-image), var(--anu-image); */
+  /* background-image: var(--bg-image); */
   background-image: unset;
 
 
@@ -480,7 +480,7 @@ input.task-list-item-checkbox[type="checkbox"]:checked {
 /* LEFT BAR RIBBON (VERTICAL)*/
 .workspace-ribbon.mod-left:before,
 .workspace-ribbon.side-dock-ribbon.mod-left {
-  background-image: var(--mm-image), var(--anu-image);
+  background-image: var(--bg-image);
   background-attachment: fixed;
   /* difference or lighten works here too */
   background-blend-mode: normal; 
@@ -493,7 +493,7 @@ input.task-list-item-checkbox[type="checkbox"]:checked {
 
 
 .workspace.is-left-sidedock-open.is-sliding {
-  background-image: var(--mm-image), var(--anu-image);
+  background-image: var(--bg-image);
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
@@ -507,7 +507,7 @@ input.task-list-item-checkbox[type="checkbox"]:checked {
 
 /* # File Explorer Styling */
 .workspace-tab-container .workspace-leaf-content[data-type="file-explorer"] {
-  background-image: var(--mm-image), var(--anu-image);
+  background-image: var(--bg-image);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-blend-mode: screen;
@@ -530,7 +530,7 @@ input.task-list-item-checkbox[type="checkbox"]:checked {
 
 /* UIFRAME :: TOP BAR */
 .app-container .horizontal-main-container .workspace-tab-header-container {
-  background-image: var(--mm-image), var(--anu-image);
+  background-image: var(--bg-image);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -765,7 +765,7 @@ jesus the psuedo trick has limitations;
 
  .workspace-split .workspace-tab-container .workspace-leaf-content .markdown-source-view .search-results-children {
 
-  background-image: var(--mm-image), var(--anu-image);
+  background-image: var(--bg-image);
   background-attachment: fixed;
   background-blend-mode: multiply, difference;
 }
@@ -774,7 +774,7 @@ jesus the psuedo trick has limitations;
 }
 
 .workspace-split .workspace-tab-container .workspace-leaf-content .markdown-reading-view .search-results-children {
-  background-image: var(--mm-image), var(--anu-image);
+  background-image: var(--bg-image);
   background-attachment: fixed;
   background-blend-mode: multiply, difference;
 }
@@ -819,7 +819,7 @@ jesus the psuedo trick has limitations;
   background: rgba(0,0,0,.8);
 } */
 /* .markdown-reading-view .embedded-backlinks .backlink-pane > .tree-item.search-result{
-  background-image: var(--mm-image), var(--anu-image);
+  background-image: var(--bg-image);
   background-attachment: fixed;
   background-blend-mode: screen;
 } */
@@ -934,7 +934,7 @@ body:not(.full-file-names) .tree-item-self {
 .workspace-split.mod-horizontal.mod-right-split
 .workspace-tabs
 .workspace-tab-header-container {
-  background-image: var(--mm-image), var(--anu-image);
+  background-image: var(--bg-image);
   background-blend-mode: difference, multiply;
   background-attachment: fixed; 
   background-repeat: no-repeat;
@@ -1029,7 +1029,7 @@ body:not(.full-file-names) .tree-item-self {
 @container (width > 80cqw){
 
   .canvas-background {
-    background-image: var(--mm-image), var(--anu-image);
+    background-image: var(--bg-image);
     background-blend-mode: color-dodge;
     background-attachment: fixed; 
     background-repeat: no-repeat;
