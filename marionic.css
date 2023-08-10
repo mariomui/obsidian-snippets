@@ -293,18 +293,17 @@ progress::-moz-progress-bar {
   display: none;
 }
 .HyperMD-list-line.cm-line:has(
-  > :is(.cm-list-2, .cm-list-4, .cm-list-6)
+  > :is(.cm-list-3, .cm-list-5, .cm-list-7)
 ) {
   color: var(--material-color-deep-purple-200);
-  border: 1px solid blue;
 }
 
 
 /** Make bullet points more readable **/
-/* .HyperMD-list-line.HyperMD-list-line-1.cm-line:nth-of-type(2n + 1),
-li:nth-of-type(2n + 1), li:nth-child(2n+1) {
+.HyperMD-list-line.HyperMD-list-line-1.cm-line:nth-of-type(3n + 1)
+/*, li:nth-of-type(2n + 1), li:nth-child(2n+1)  */ {
   color: var(--material-color-deep-purple-200);
-} */
+}
 
 input.task-list-item-checkbox[type="checkbox"] {
   border-color: var(--material-color-deep-purple-200);
