@@ -24,7 +24,7 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-blend-mode: color;
-  constrain: paint;
+  contain: paint;
 }
 
 /* NAV FILE EXPLORER BACKDROP */
@@ -518,7 +518,7 @@ input.task-list-item-checkbox[type="checkbox"]:checked {
 }
 
 /* fake psuedo for shade */
-.workspace-tab-container .workspace-leaf-content[data-type="file-explorer"]::before {
+/* .workspace-tab-container .workspace-leaf-content[data-type="file-explorer"]::before { */
   /* content: "";
   position: absolute;
   top: 0;
@@ -529,7 +529,7 @@ input.task-list-item-checkbox[type="checkbox"]:checked {
   /* background-image: var(--mm-image), var(--anu-image) !important; */
   /* background-attachment: fixed; */
 
-}
+/* } */
 
 /* UIFRAME :: TOP BAR */
 .app-container .horizontal-main-container .workspace-tab-header-container {
