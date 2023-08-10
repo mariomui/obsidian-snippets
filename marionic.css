@@ -399,8 +399,8 @@ input.task-list-item-checkbox[type="checkbox"]:checked {
   background-size: 100% 100%;
   background-blend-mode: var(--topbar-blend);
 }
-
-/* Sync Change 6 */
+ 
+/* Sync Change 5 */
 /* mama jamma inside window content; */
 .markdown-reading-view,
 .markdown-source-view {
