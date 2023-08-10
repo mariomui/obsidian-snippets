@@ -390,7 +390,6 @@ input.task-list-item-checkbox[type="checkbox"]:checked {
 } */
 
 /* <BORDERLESS UI >*/
-/* change this to sync again part 2dd */
 
 /* ## TOP BAR FOR LEAF */
 .workspace .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-container .workspace-leaf .workspace-leaf-content .view-header {
@@ -401,6 +400,7 @@ input.task-list-item-checkbox[type="checkbox"]:checked {
   background-blend-mode: var(--topbar-blend);
 }
 
+/* Sync Change */
 /* mama jamma inside window content; */
 .markdown-reading-view,
 .markdown-source-view {
