@@ -382,7 +382,8 @@
   /* </METALS> */
 
   /* # ARCHIVED */
-
+  /* MAIN */
+  --bg-image: var(--mm-image), var(--anu-image);
 }
 /* --mm-image: url('https://images.pling.com/img/00/00/61/99/23/1599583/7c142d99d624ed71b0548e60cb3dd709e57babfdd2d120e4ee027412c1333533e422.jpg'); */
 /* https://i.imgur.com/StZak.jpg); */
