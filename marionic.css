@@ -402,9 +402,10 @@ input.task-list-item-checkbox[type="checkbox"]:checked {
 
 /* mama jamma inside window content; */
 .markdown-reading-view,
-.markdown-source-view,
+.markdown-source-view {
+  
 /* .workspace-leaf-content .view-content  */
-{
+
   background-image: var(--mm-image);
   background-attachment: fixed;
   background-repeat: no-repeat;
