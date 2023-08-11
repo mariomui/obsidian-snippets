@@ -603,7 +603,7 @@ input.task-list-item-checkbox[type="checkbox"]:checked {
 .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header.mod-active.is-active,
 .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header {
   background-image: var(--dark-blue-grad), var(--mm-image), var(--anu-image);
-  background-blend-mode: screen;
+  /* background-blend-mode: screen; */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -876,7 +876,7 @@ body:not(.full-file-names) .tree-item-self {
 
 .workspace-tabs .workspace-tab-container .workspace-leaf .workspace-leaf-content .view-content .pending-notes-view-container li {
   background-image: var(--midnight-grad), var(--mm-image), var(--anu-image);
-  background-blend-mode: difference, darken;
+  /* background-blend-mode: difference, darken; */
   background-attachment: fixed;
   white-space: nowrap;
   overflow: hidden;
@@ -1019,7 +1019,7 @@ body:not(.full-file-names) .tree-item-self {
   }
 
   .cm-content.cm-lineWrapping .cm-line:has(.cm-hmd-frontmatter) + .cm-line:not(:has(> .cm-hmd-frontmatter)) {
-    margin-bottom: -10cqw !important;
+    margin-bottom: -2cqh !important;
   }
 
 }
