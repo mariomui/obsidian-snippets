@@ -1,3 +1,6 @@
 .markdown-rendered tbody tr:nth-child(odd) {
   color: var(--accent);
 }
+.markdown-rendered tbody tr:nth-child(odd) code {
+  color: var(--accent);
+}
