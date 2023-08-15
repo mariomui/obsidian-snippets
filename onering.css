@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /* STATUS BAR */
+:root {
+  --status-bar-height: 21px;
+}
+
 /* STATUS BAR */
 .status-bar {
   --status-bar-position: relative;
