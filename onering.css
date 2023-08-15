@@ -23,6 +23,7 @@
   padding-left: 5px;
   margin-top: -0.2px;
   border-top: 1px solid var(--the-color);
+  background-color: var(--the-background-color);
 }
 
 .status-bar > div.status-bar-item:nth-last-child(odd) {
