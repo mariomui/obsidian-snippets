@@ -45,7 +45,6 @@
   border-bottom: calc(0.5 * var(--status-bar-height)) solid var(--status-bar-text-color);
   border-left: calc(0.5 * var(--status-bar-height)) solid transparent;
   margin-left: 5px;
-  background-color: var(--the-background-color);
 }
 
 /* Settings icon */
