@@ -2,7 +2,7 @@
 /* STATUS BAR */
 :root {
   --status-bar-height: 21px;
-  --the-color: var(--material-color-orange-700);
+  --the-color: var(--material-color-orange-800);
   --the-background-color: var(--tertiary-blue-800);
 }
 
@@ -15,7 +15,7 @@
   padding: 0;
   border-left: none;
   border-top: 1px solid var(--the-color);
-  background-color: var(--status-bar-background);
+  background-color: var(--the-background-color) !important;
 }
 
 .status-bar > div.status-bar-item {
