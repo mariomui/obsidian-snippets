@@ -41,7 +41,7 @@
 
 .status-bar > .status-bar-item:after {
   content: "";
-  border-top: calc(1 * var(--status-bar-height)) solid var(--status-bar-text-color);
+  border-top: calc(1 * var(--status-bar-height)) solid var(--status-bar-background);
   border-right: calc(1 * var(--status-bar-height)) solid transparent;
   outline: 1px solid blue;
   margin-left: 5px;
