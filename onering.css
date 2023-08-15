@@ -15,6 +15,7 @@
   padding: 0;
   border-left: none;
   border-top: 1px solid var(--the-color);
+  background-color: var(--status-bar-background);
 }
 
 .status-bar > div.status-bar-item {
