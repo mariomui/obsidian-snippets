@@ -44,6 +44,7 @@
   border-top: calc(0.5 * var(--status-bar-height)) solid var(--status-bar-text-color);
   border-bottom: calc(0.5 * var(--status-bar-height)) solid var(--status-bar-text-color);
   border-left: calc(0.5 * var(--status-bar-height)) solid transparent;
+  border-right: calc(0.5 * var(--status-bar-height)) solid transparent;
   margin-left: 5px;
 }
 
