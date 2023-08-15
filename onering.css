@@ -94,15 +94,6 @@
   top: unset !important;
 }
 
-.status-bar-item {
-  padding-right: 5px;
-  padding-left: 10px;
-  /* display: block; */
-  position: relative; /* for :after's relative to work! */
-  color: var(--the-background-color);
-  background-color: var(--the-color);
-}
-
 .status-bar-item.mod-clickable:hover {
   color: var(--the-background-color);
 }
