@@ -50,7 +50,7 @@
   padding-left: 0px;
   margin-left: 35px; /* -5px */
   line-height: var(--status-bar-height);
-  border-top: 1px solid var(--the-color) !important;
+  border-top: 1px solid var(--the-color);
   /* margin-top: -1px; */
   max-height: var(--status-bar-height);
 }
