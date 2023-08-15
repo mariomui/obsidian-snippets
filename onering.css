@@ -64,7 +64,7 @@
 }
 
 .workspace-ribbon.mod-left .side-dock-ribbon-action[aria-label=Settings]:after {
-  /* background-color: var(--the-color); */
+  background-color: var(--the-color);
   content: "";
   position: fixed;
   height: 0;
