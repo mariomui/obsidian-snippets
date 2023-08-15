@@ -3,7 +3,7 @@
 :root {
   --status-bar-height: 21px;
   --the-color: var(--material-color-orange-700);
-  --the-background-color: var(--tertiary-blue-800);
+  --the-background-color: transparent;
 }
 
 /* STATUS BAR */
@@ -14,7 +14,7 @@
   gap: 0px;
   padding: 0;
   border-left: none;
-  border-top: 0px solid transparent;
+  border-top: 1px solid var(--the-color);
 }
 
 .status-bar > div.status-bar-item {
@@ -50,6 +50,7 @@
   padding-left: 0px;
   margin-left: 35px; /* -5px */
   line-height: var(--status-bar-height);
+  border-top: 1px solid var(--the-color);
   /* margin-top: -1px; */
   max-height: var(--status-bar-height);
 }
@@ -130,6 +131,7 @@
   bottom: 0px;
   width: 0;
   height: 0;
+  border-top: calc(0.5 * var(--status-bar-height)) solid transparent;
   border-bottom: calc(0.5 * var(--status-bar-height)) solid transparent;
   border-left: calc(0.5 * var(--status-bar-height)) solid var(--the-color);
 }
@@ -141,6 +143,7 @@
   bottom: 0px;
   width: 0;
   height: 0;
+  border-top: calc(0.5 * var(--status-bar-height) - 1px) solid transparent;
   border-bottom: calc(0.5 * var(--status-bar-height)) solid transparent;
   border-left: calc(0.5 * var(--status-bar-height)) solid var(--the-background-color);
   background-color: var(--the-color);
