@@ -96,37 +96,8 @@
   top: unset !important;
 }
 
-.status-bar-item {
-  padding-right: 5px;
-  padding-left: 10px;
-  /* display: block; */
-  position: relative; /* for :after's relative to work! */
-  color: var(--the-background-color);
-  background-color: var(--the-color);
-}
-
 .status-bar-item.mod-clickable:hover {
   color: var(--the-background-color);
-}
-
-.status-bar-item:not(:first-child) {
-  margin-left: calc(5px + 0.5 * var(--status-bar-height));
-}
-
-.status-bar-item svg {
-  fill: var(--the-background-color) !important;
-}
-
-.status-bar > .status-bar-item:after {
-  content: "";
-  position: absolute;
-  right: calc(-0.5 * var(--status-bar-height));
-  bottom: 0px;
-  width: 0;
-  height: 0;
-  border-top: calc(0.5 * var(--status-bar-height)) solid transparent;
-  border-bottom: calc(0.5 * var(--status-bar-height)) solid transparent;
-  border-left: calc(0.5 * var(--status-bar-height)) solid var(--the-color);
 }
 
 .status-bar > .status-bar-item:not(:last-child):before {
