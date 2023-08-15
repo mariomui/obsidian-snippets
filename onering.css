@@ -41,10 +41,10 @@
 
 .status-bar > .status-bar-item:after {
   content: "";
-  border-top: calc(1 * var(--status-bar-height)) solid var(--status-bar-text-color);
+  border-top: calc(1 * var(--status-bar-height)) solid var(--status-bar-background);
   border-right: calc(1 * var(--status-bar-height)) solid transparent;
   margin-left: 5px;
-  background-color: var(--the-background-color);
+  background-color: var(--status-bar-text-color);
 }
 
 /* Settings icon */
