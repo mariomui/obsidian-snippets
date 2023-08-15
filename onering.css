@@ -31,13 +31,11 @@
   color: var(--status-bar-text-color);
   background-color: var(--status-bar-background);
   border-radius: 0;
-  border: 1px solid blue;
 }
 
 .status-bar > div.status-bar-item:nth-last-child(even) {
   --status-bar-text-color: var(--the-color);
   --status-bar-background: var(--the-background-color);
-  border: 1px solid blue;
 }
 
 .status-bar > .status-bar-item:after {
