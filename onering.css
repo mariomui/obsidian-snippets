@@ -1,1 +1,9 @@
-.markdown-rendered tbody tr:nth-child(odd){color:var(--material-color-deep-purple-200)}.markdown-rendered tbody tr:nth-child(odd) code{color:var(--material-color-deep-purple-200)}.markdown-rendered tbody tr:nth-child(odd) strong{color:var(--material-color-deep-purple-200)}
+.markdown-rendered tbody tr:nth-child(odd) {
+  color: var(--material-color-deep-purple-200);
+}
+.markdown-rendered tbody tr:nth-child(odd) code {
+  color: var(--material-color-deep-purple-200);
+}
+.markdown-rendered tbody tr:nth-child(odd) strong {
+  color: var(--material-color-deep-purple-200);
+}
