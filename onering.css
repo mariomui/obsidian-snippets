@@ -1,5 +1,44 @@
 @charset "UTF-8";
 /* STATUS BAR */
+/* STATUS BAR */
+.status-bar {
+  --status-bar-position: relative;
+  --status-bar-radius: 0;
+  justify-content: flex-start;
+  gap: 0px;
+  padding: 0;
+  border-left: none;
+  border-top: 1px solid var(--the-color);
+}
+
+.status-bar > div.status-bar-item {
+  border-radius: 0;
+  padding: 0;
+  padding-left: 5px;
+  margin-top: -0.2px;
+}
+
+.status-bar > div.status-bar-item:nth-last-child(odd) {
+  --status-bar-text-color: var(--the-background-color);
+  --status-bar-background: var(--the-color);
+  color: var(--status-bar-text-color);
+  background-color: var(--status-bar-background);
+  border-radius: 0;
+}
+
+.status-bar > div.status-bar-item:nth-last-child(even) {
+  --status-bar-text-color: var(--the-color);
+  --status-bar-background: var(--the-background-color);
+}
+
+.status-bar > .status-bar-item:after {
+  content: "";
+  border-top: calc(0.5 * var(--status-bar-height)) solid var(--status-bar-text-color);
+  border-bottom: calc(0.5 * var(--status-bar-height)) solid var(--status-bar-text-color);
+  border-left: calc(0.5 * var(--status-bar-height)) solid transparent;
+  margin-left: 5px;
+}
+
 .status-bar {
   justify-content: flex-start;
   padding-left: 0px;
