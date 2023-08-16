@@ -48,7 +48,6 @@
   background-color: var(--status-bar-text-color);
 }
 
-/* Settings icon */
 .status-bar-item.mod-clickable:hover {
   color: var(--material-color-orange-500);
 }
