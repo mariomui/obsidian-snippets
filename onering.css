@@ -113,7 +113,7 @@
   background-color: var(--the-color);
 }
 
-.status-bar > .status-bar-item:first-child:before {
+.status-bar > .status-bar-item:is(:first-child):before {
   content: "";
   position: absolute;
   border-top: calc(1 * var(--status-bar-height)) solid var(--status-bar-background);
