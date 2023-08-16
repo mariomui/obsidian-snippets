@@ -117,10 +117,10 @@
 .status-bar > .status-bar-item:is(:first-child):before {
   content: "";
   position: relative;
-  top: -1.2px;
-  height: calc(0.5 * var(--status-bar-height));
+  top: -1.3px;
+  height: calc(0.5 * var(--status-bar-height) - 1);
   width: 0;
-  left: -26px;
+  left: -27px;
   border-top: calc(1 * var(--status-bar-height)) solid var(--status-bar-background);
   border-left: calc(1 * var(--status-bar-height)) solid var(--status-bar-text-color);
   border-bottom: none;
