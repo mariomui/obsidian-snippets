@@ -115,7 +115,7 @@
 
 .status-bar > .status-bar-item:is(:first-child):before {
   content: "";
-  position: absolute;
+  position: relative;
   right: -16px;
   bottom: 0px;
   width: 0;
