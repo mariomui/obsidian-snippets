@@ -10,7 +10,7 @@
 .status-bar {
   --status-bar-position: relative;
   --status-bar-radius: 0;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 0px;
   padding: 0;
   border-left: none;
