@@ -119,8 +119,8 @@
   position: relative;
   top: -1.3px;
   height: calc(0.5 * var(--status-bar-height) - 1);
-  width: 0;
-  left: -27px;
+  width: calc(0.5 * var(--status-bar-height) - 1);
+  left: -26px;
   border-top: calc(1 * var(--status-bar-height)) solid var(--status-bar-background);
   border-left: calc(1 * var(--status-bar-height)) solid var(--status-bar-text-color);
   border-bottom: none;
