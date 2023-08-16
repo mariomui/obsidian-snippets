@@ -119,8 +119,9 @@
   left: 0;
   width: 0;
   height: 0;
-  border-left: calc(0.5 * var(--status-bar-height)) solid transparent;
+  border-left: calc(0.5 * var(--status-bar-height)) solid var(--status-bar-background);
   border-top: calc(0.5 * var(--status-bar-height) - 1px) solid var(--status-bar-background);
+  border-bottom: calc(0.5 * var(--status-bar-height)) solid transparent;
   background-color: var(--the-color);
 }
 
