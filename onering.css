@@ -8,7 +8,6 @@
 
 /* STATUS BAR */
 .status-bar {
-  --status-bar-position: relative;
   --status-bar-radius: 0;
   justify-content: flex-end;
   gap: 0px;
