@@ -124,8 +124,8 @@
   border-top: calc(1 * var(--status-bar-height)) solid var(--status-bar-background);
   border-left: calc(1 * var(--status-bar-height)) solid var(--status-bar-text-color);
   border-bottom: none;
-  -webkit-clip-path: polygon(50% 0, 0 100%, 100% 100%);
-          clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  -webkit-clip-path: polygon(50% 0, 0 0%, 100% 100%);
+          clip-path: polygon(50% 0, 0 0%, 100% 100%);
 }
 
 .markdown-rendered tbody tr:nth-child(odd) {
