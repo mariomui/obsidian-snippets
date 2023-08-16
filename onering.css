@@ -116,13 +116,13 @@
 .status-bar > .status-bar-item:is(:first-child):before {
   content: "";
   position: relative;
-  top: -0.5px;
-  bottom: 0;
-  width: 17px;
-  left: -25px;
-  border-top: calc(var(--status-bar-height)) solid var(--status-bar-background);
-  border-left: calc(0.5 * var(--status-bar-height)) solid var(--status-bar-text-color);
-  border-bottom: unset;
+  top: -0.9px;
+  height: 0;
+  width: 0;
+  left: -26px;
+  border-top: calc(1 * var(--status-bar-height)) solid var(--status-bar-background);
+  border-left: calc(1 * var(--status-bar-height)) solid var(--status-bar-text-color);
+  border-bottom: none;
 }
 
 .markdown-rendered tbody tr:nth-child(odd) {
