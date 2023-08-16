@@ -121,7 +121,7 @@
   width: 17px;
   left: -25px;
   border-top: calc(var(--status-bar-height)) solid var(--status-bar-background);
-  border-left: calc(1 * var(--status-bar-height)) solid var(--status-bar-text-color);
+  border-left: calc(0.5 * var(--status-bar-height)) solid var(--status-bar-text-color);
 }
 
 .markdown-rendered tbody tr:nth-child(odd) {
