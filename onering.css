@@ -98,7 +98,7 @@
 }
 
 .status-bar-item.mod-clickable:hover {
-  color: var(--the-background-color);
+  color: var(--status-bar-background);
 }
 
 .status-bar > .status-bar-item:not(:last-child):before {
