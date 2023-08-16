@@ -120,7 +120,7 @@
   height: 0;
   width: 0;
   left: -26px;
-  border-top: calc(1 * var(--status-bar-height)) solid var(--status-bar-background);
+  border-top: calc(1 * var(--status-bar-height)) solid var(--material-color-orange-a400);
   border-left: calc(1 * var(--status-bar-height)) solid var(--status-bar-text-color);
   border-bottom: none;
 }
