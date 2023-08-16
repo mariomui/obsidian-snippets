@@ -110,8 +110,7 @@
   border-top: calc(0.5 * var(--status-bar-height) - 1px) solid transparent;
   border-bottom: calc(0.5 * var(--status-bar-height)) solid transparent;
   border-left: calc(0.5 * var(--status-bar-height)) solid var(--the-background-color);
-  background-color: var(--the-color);
-  background: green;
+  background-color: green;
 }
 
 .markdown-rendered tbody tr:nth-child(odd) {
