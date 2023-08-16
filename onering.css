@@ -27,7 +27,7 @@
   background-color: var(--the-background-color);
 }
 .status-bar > div.status-bar-item.clickable-icon {
-  opacity: 1;
+  filter: brightness(1.4);
 }
 
 .status-bar > div.status-bar-item:nth-last-child(odd) {
