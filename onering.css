@@ -115,9 +115,13 @@
 
 .status-bar > .status-bar-item:is(:first-child):before {
   content: "";
-  position: absolute;
-  border-top: calc(1 * var(--status-bar-height)) solid var(--status-bar-background);
-  border-right: calc(1 * var(--status-bar-height)) solid transparent;
+  position: relative;
+  top: -0.5px;
+  bottom: 0;
+  width: 17px;
+  left: -25px;
+  border-top: calc(var(--status-bar-height)) solid var(--status-bar-background);
+  border-left: calc(1 * var(--status-bar-height)) solid var(--status-bar-text-color);
 }
 
 .markdown-rendered tbody tr:nth-child(odd) {
