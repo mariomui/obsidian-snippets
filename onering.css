@@ -118,7 +118,7 @@
   content: "";
   position: relative;
   top: -1.2px;
-  height: 0;
+  height: calc(0.5 * var(--status-bar-height));
   width: 0;
   left: -26px;
   border-top: calc(1 * var(--status-bar-height)) solid var(--status-bar-background);
