@@ -26,6 +26,9 @@
   border-top: 1px solid var(--the-color);
   background-color: var(--the-background-color);
 }
+.status-bar > div.status-bar-item.clickable-icon {
+  opacity: 1;
+}
 
 .status-bar > div.status-bar-item:nth-last-child(odd) {
   --status-bar-text-color: var(--the-background-color);
@@ -123,9 +126,6 @@
   border-top: calc(1 * var(--status-bar-height)) solid var(--status-bar-background);
   border-left: calc(1 * var(--status-bar-height)) solid var(--status-bar-text-color);
   border-bottom: none;
-}
-.status-bar > .status-bar-item:is(:first-child):before.clickable-icon {
-  opacity: unset;
 }
 
 .markdown-rendered tbody tr:nth-child(odd) {
