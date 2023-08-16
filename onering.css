@@ -111,19 +111,7 @@
   border-bottom: calc(0.5 * var(--status-bar-height)) solid transparent;
   border-left: calc(0.5 * var(--status-bar-height)) solid var(--the-background-color);
   background-color: var(--the-color);
-}
-
-.status-bar > .status-bar-item:first-child:before {
-  content: "";
-  position: relative;
-  left: -16px;
-  bottom: 0px;
-  width: 0;
-  height: 0;
-  border-top: calc(0.5 * var(--status-bar-height) - 1px) solid transparent;
-  border-bottom: calc(0.5 * var(--status-bar-height)) solid transparent;
-  border-left: calc(0.5 * var(--status-bar-height)) solid var(--the-background-color);
-  background-color: var(--the-color);
+  background: green;
 }
 
 .markdown-rendered tbody tr:nth-child(odd) {
