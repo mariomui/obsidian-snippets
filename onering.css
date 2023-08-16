@@ -113,6 +113,13 @@
   background-color: var(--the-color);
 }
 
+.status-bar > .status-bar-item:first-child:before {
+  content: "";
+  position: absolute;
+  border-top: calc(1 * var(--status-bar-height)) solid var(--status-bar-background);
+  border-right: calc(1 * var(--status-bar-height)) solid transparent;
+}
+
 .markdown-rendered tbody tr:nth-child(odd) {
   color: var(--material-color-deep-purple-200);
 }
