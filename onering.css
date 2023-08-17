@@ -389,6 +389,9 @@
 .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title > .nav-folder-collapse-indicator {
   display: none; /* Remove collapse arrow from top level folders */
 }
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title .nav-file-title-content {
+  color: var(--FoldText);
+}
 
 /* General Nav Folder Children (this is the part that expands from each top level folder) */
 /* General Nav Folder Children (this is the part that expands from each top level folder) */
