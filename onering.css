@@ -26,6 +26,13 @@
 .status-bar > div.status-bar-item.mod-clickable:hover {
   color: var(--material-color-orange-500);
 }
+.status-bar > div.status-bar-item:after {
+  content: "";
+  border-top: calc(1 * var(--status-bar-height)) solid var(--status-bar-background);
+  border-right: calc(1 * var(--status-bar-height)) solid transparent;
+  margin-left: 5px;
+  background-color: var(--status-bar-text-color);
+}
 .status-bar > div.status-bar-item:nth-last-child(odd) {
   --status-bar-text-color: var(--the-background-color);
   --status-bar-background: var(--the-color);
@@ -38,13 +45,6 @@
   --status-bar-text-color: var(--the-color);
   --status-bar-background: var(--the-background-color);
   opacity: initial !important;
-}
-.status-bar > .status-bar-item:after {
-  content: "";
-  border-top: calc(1 * var(--status-bar-height)) solid var(--status-bar-background);
-  border-right: calc(1 * var(--status-bar-height)) solid transparent;
-  margin-left: 5px;
-  background-color: var(--status-bar-text-color);
 }
 .status-bar > .status-bar-item:not(:last-child):before {
   content: "";
