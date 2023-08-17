@@ -80,14 +80,7 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
   --FoldTT: var(--material-color-brown-800);
   --FoldTT-1: var(--material-color-brown-900);
 }
-.theme-old {
-  --Fold0: #ff40403d;
-  --FoldB: #f9ab255d;
-  --FoldC: #afb42b81;
-  --FoldD: #ff910063;
-  --FoldE: #ef6c0067;
-  --FoldF: #d8421559;
-}
+
 
 .theme-light {
   --FoldText: #000000;
