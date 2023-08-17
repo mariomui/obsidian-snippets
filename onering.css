@@ -379,7 +379,6 @@
 }
 .nav-folder.mod-root > .nav-folder-children > .nav-folder.is-collapsed > .nav-folder-title {
   border-radius: 5px;
-  border: 3px solid blue;
 }
 .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title {
   color: var(--FoldText);
