@@ -374,7 +374,7 @@
 .nav-folder.mod-root {
   border-radius: 0.5em 2em 0.4em 0.2em;
 }
-.nav-folder.mod-root > .nav-folder-children > .nav-file > .nav-file-title {
+.nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title {
   padding-left: 5px;
   border: 3px solid blue;
 }
