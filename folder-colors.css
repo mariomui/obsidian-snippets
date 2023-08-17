@@ -141,6 +141,8 @@ You can change these to match your use case.
 
 
 
+
+
 /* apply style to any child of a _ prefixed virtual file */
 .nav-folder.mod-root .nav-file > .nav-file-title[data-path^="_"] {
   border-bottom: 1px solid var(--secondary);
