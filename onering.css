@@ -388,6 +388,16 @@
 .nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title.is-active { /* active file increase font size and removes normal highlight marker */
   background-color: var(--theme-color-translucent-1);
 }
+.nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title.is-active::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  height: 2px;
+  width: 100%;
+  background-image: linear-gradient(to right, var(--theme-color), transparent 90%);
+  opacity: 0.9;
+}
 .nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title .nav-file-title-content {
   color: var(--FoldText);
 }
