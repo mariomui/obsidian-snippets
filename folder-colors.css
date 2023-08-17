@@ -143,13 +143,7 @@ You can change these to match your use case.
 
 
 
-.nav-folder.mod-root
-  > .nav-folder-children
-  > .nav-folder
-  > .nav-folder-title[data-path^="A"]
-  + .nav-folder-children {
-  background-color: var(--FoldA-1);
-}
+
 .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
