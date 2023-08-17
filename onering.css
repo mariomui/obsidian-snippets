@@ -454,6 +454,7 @@
   padding: 0.1em 0.2em;
 }
 .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title {
+  /* Set up explorer container margins */
   color: var(--FoldText);
   padding-left: 0.3em !important;
   margin-top: 0.1em;
