@@ -23,7 +23,6 @@
   border-top: 1px solid var(--the-color);
   background-color: var(--the-background-color);
 }
-
 .status-bar > div.status-bar-item:nth-last-child(odd) {
   --status-bar-text-color: var(--the-background-color);
   --status-bar-background: var(--the-color);
@@ -33,7 +32,7 @@
   opacity: initial !important;
 }
 
-.status-bar > div.status-bar-item:nth-last-child(even) {
+.status-bar .status-bar > div.status-bar-item:nth-last-child(even) {
   --status-bar-text-color: var(--the-color);
   --status-bar-background: var(--the-background-color);
   opacity: initial !important;
