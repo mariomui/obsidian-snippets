@@ -44,7 +44,9 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
 }
 
 .theme-dark {
-  --FoldText: #cbcbcb;
+  /* --FoldText: #cbcbcb; */
+  --FoldText: var(--material-color-orange-300);
+
 
   --Fold1: #f31f7448;
   --Fold2: #be25ff49;
