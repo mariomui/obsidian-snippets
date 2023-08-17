@@ -470,6 +470,37 @@
   height: 0px;
 }
 
+/* Relationship lines for 2nd, 3rd, and 4th level folders */
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-file {
+  border-left: var(--nestlinestyle1) var(--nestlinesize1) var(--nestlinecolor1);
+  margin-left: 12px;
+}
+
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder {
+  border-left: var(--nestlinestyle1) var(--nestlinesize1) var(--nestlinecolor1);
+  margin-left: 12px;
+}
+
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-file {
+  border-left: var(--nestlinestyle2) var(--nestlinesize2) var(--nestlinecolor2);
+  margin-left: 12px;
+}
+
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder {
+  border-left: var(--nestlinestyle2) var(--nestlinesize2) var(--nestlinecolor2);
+  margin-left: 12px;
+}
+
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-file {
+  border-left: var(--nestlinestyle3) var(--nestlinesize3) var(--nestlinecolor3);
+  margin-left: 12px;
+}
+
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder {
+  border-left: var(--nestlinestyle3) var(--nestlinesize3) var(--nestlinecolor3);
+  margin-left: 12px;
+}
+
 /* STATUS BAR */
 .status-bar {
   --status-bar-height: 21px;
