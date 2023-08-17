@@ -449,10 +449,9 @@
 .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=Z_] + .nav-folder-children {
   background-color: var(--FoldZ-1);
 }
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children {
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children { /* General Nav Folder Children (this is the part that expands from each top level folder) */
   border-radius: 0px 0px 5px 5px;
   padding: 0.1em 0.2em;
-  border: 3px solid blue;
 }
 .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title {
   color: var(--FoldText);
