@@ -103,24 +103,7 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
   --FoldF: #d8421560;
 }
 
-/* Set up explorer container margins */
 
-
-/* 
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title {
-  color: var(--FoldText);
-  padding-left: 0.3em !important;
-  margin-top: 0.1em;
-  border-radius: 0.5em 1em 0em 1px !important;
-} 
-*/
-
-
-/* Scrollbars eliminated */
-.workspace-leaf-content[data-type="file-explorer"] ::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
-}
 
 /* Relationship lines for 2nd, 3rd, and 4th level folders */
 .nav-folder.mod-root
