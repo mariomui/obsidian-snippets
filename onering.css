@@ -387,7 +387,6 @@
 }
 .nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title.is-active { /* active file increase font size and removes normal highlight marker */
   background-color: var(--theme-color-translucent-1);
-  border: 1px solid blue;
 }
 .nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title .nav-file-title-content {
   color: var(--FoldText);
