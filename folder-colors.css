@@ -119,7 +119,7 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
 
 
 /* Adds hemisphere marker to active file instead */
-.nav-file-title.is-active::before {
+/* .nav-file-title.is-active::before { */
   /* content: "";
   position: absolute;
   bottom: -1px;
@@ -132,8 +132,8 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
     transparent 90%
   );
   opacity: .9; */
-}
-
+/* } */
+/*  */
 /* 16 Top level Folders By Starting Digit (0-F)
 These are set for me by leading number/letter which also ensures they are in the correct order when sorted alphabetically
 You can change these to match your use case.
