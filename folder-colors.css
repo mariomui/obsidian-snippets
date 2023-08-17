@@ -110,20 +110,23 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
 
 /* Remove collapse arrow from top level folders */
 .nav-folder.mod-root {
-  .nav-folder-children
-  .nav-folder
-  .nav-folder-title
-  .nav-folder-collapse-indicator {
-    display: none;
-  }
+  border-radius: 0.5em 2em 0.4em 0.2em;
 
+  > .nav-folder-children {
+    > .nav-folder {
+      > .nav-folder-title {
+        > .nav-folder-collapse-indicator {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 
 /* Top Level Folder Titles */
  /* ## Style File Explorer Internal Container Color */
 .nav-folder.mod-root {
-  border-radius: 0.5em 2em 0.4em 0.2em;
 
   /* background: linear-gradient(to bottom, #112, #124); */
 }
