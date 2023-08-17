@@ -111,11 +111,9 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
 /* Remove collapse arrow from top level folders */
 .nav-folder.mod-root {
   > .nav-folder-children {
-    > .nav-folder {
-      > .nav-folder-title {
-        > .nav-folder-collapse-indicator {
-          display: none;
-        }
+    > .nav-folder-title {
+      > .nav-folder-collapse-indicator {
+        display: none;
       }
     }
   }
