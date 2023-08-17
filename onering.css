@@ -367,8 +367,15 @@
 }
 
 /* Remove collapse arrow from top level folders */
+.nav-files-container {
+  margin: 0px 5px;
+}
+
 .nav-folder.mod-root {
   border-radius: 0.5em 2em 0.4em 0.2em;
+}
+.nav-folder.mod-root > .nav-folder-children > .nav-folder.is-collapsed {
+  border-radius: 5px;
 }
 .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title {
   color: var(--FoldText);
