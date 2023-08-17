@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --accent: #37cdbe;
   --primary: #570df8;
@@ -395,8 +394,8 @@
 .nav-folder.mod-root > .nav-folder-children > .nav-folder.is-collapsed > .nav-folder-title {
   border-radius: 5px;
 }
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=📂] {
-  background-color: var(--Fold0);
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=A] {
+  background-color: var(--FoldA);
 }
 .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title {
   color: var(--FoldText);
