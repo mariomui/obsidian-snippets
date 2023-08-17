@@ -406,6 +406,42 @@
 .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=B_] + .nav-folder-children {
   background-color: var(--FoldB-1);
 }
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=C] {
+  background-color: var(--FoldC);
+}
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=C] + .nav-folder-children {
+  background-color: var(--FoldC-1);
+}
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=D] {
+  background-color: var(--FoldD);
+}
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=D] + .nav-folder-children {
+  background-color: var(--FoldD-1);
+}
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=E] {
+  background-color: var(--FoldE);
+}
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=E] + .nav-folder-children {
+  background-color: var(--FoldE-1);
+}
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=F] {
+  background-color: var(--FoldF);
+}
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=F] + .nav-folder-children {
+  background-color: var(--FoldF-1);
+}
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=Y_] {
+  background-color: var(--FoldTT);
+}
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=Y_] + .nav-folder-children {
+  background-color: var(--FoldTT-1);
+}
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=Z_] {
+  background-color: var(--FoldZ);
+}
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=Z_] + .nav-folder-children {
+  background-color: var(--FoldZ-1);
+}
 .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title {
   color: var(--FoldText);
   padding-left: 0.3em !important;
