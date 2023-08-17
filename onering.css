@@ -23,6 +23,9 @@
   border-top: 1px solid var(--the-color);
   background-color: var(--the-background-color);
 }
+.status-bar > div.status-bar-item.mod-clickable:hover {
+  color: var(--material-color-orange-500);
+}
 .status-bar > div.status-bar-item:nth-last-child(odd) {
   --status-bar-text-color: var(--the-background-color);
   --status-bar-background: var(--the-color);
@@ -31,13 +34,11 @@
   border-radius: 0;
   opacity: initial !important;
 }
-
-.status-bar .status-bar > div.status-bar-item:nth-last-child(even) {
+.status-bar > div.status-bar-item:nth-last-child(even) {
   --status-bar-text-color: var(--the-color);
   --status-bar-background: var(--the-background-color);
   opacity: initial !important;
 }
-
 .status-bar > .status-bar-item:after {
   content: "";
   border-top: calc(1 * var(--status-bar-height)) solid var(--status-bar-background);
@@ -45,11 +46,6 @@
   margin-left: 5px;
   background-color: var(--status-bar-text-color);
 }
-
-.status-bar-item.mod-clickable:hover {
-  color: var(--material-color-orange-500);
-}
-
 .status-bar > .status-bar-item:not(:last-child):before {
   content: "";
   position: absolute;
@@ -62,7 +58,6 @@
   border-left: calc(0.5 * var(--status-bar-height)) solid var(--the-background-color);
   background-color: var(--the-color);
 }
-
 .status-bar > .status-bar-item:is(:first-child):before {
   content: "";
   position: relative;
