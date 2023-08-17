@@ -1019,7 +1019,7 @@ body:not(.full-file-names) .tree-item-self {
   }
 
   .cm-content.cm-lineWrapping .cm-line:has(.cm-hmd-frontmatter) + .cm-line:not(:has(> .cm-hmd-frontmatter)) {
-    margin-bottom: -14cqh !important;
+    margin-bottom: -5% !important;
   }
 
 }
