@@ -1007,7 +1007,7 @@ body:not(.full-file-names) .tree-item-self {
     max-width: 20ch !important;
   }
   .cm-line:has(> .cm-hmd-frontmatter) + .cm-line:has(> .cm-hmd-frontmatter) {
-    margin-top: .8em !important;
+    /* margin-top: .8em !important; */
   }
   .cm-line:has(> .cm-hmd-frontmatter) > * {
     
