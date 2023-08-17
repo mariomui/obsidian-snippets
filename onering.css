@@ -391,7 +391,7 @@
 .nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title .nav-file-title-content {
   color: var(--FoldText);
 }
-.nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title > .nav-file-title[data-path^=_] { /* apply style to any child of a _ prefixed virtual file */
+.nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title[data-path^=_] { /* apply style to any child of a _ prefixed virtual file */
   border-bottom: 1px solid var(--secondary);
   display: none;
 }
