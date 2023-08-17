@@ -147,19 +147,6 @@ You can change these to match your use case.
 .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
-  > .nav-folder-title[data-path^="B_"] {
-  background-color: var(--FoldB);
-}
-.nav-folder.mod-root
-  > .nav-folder-children
-  > .nav-folder
-  > .nav-folder-title[data-path^="B_"]
-  + .nav-folder-children {
-  background-color: var(--FoldB-1);
-}
-.nav-folder.mod-root
-  > .nav-folder-children
-  > .nav-folder
   > .nav-folder-title[data-path^="C"] {
   background-color: var(--FoldC);
 }
