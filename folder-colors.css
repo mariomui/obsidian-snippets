@@ -121,18 +121,10 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
 
 
 
-.nav-folder-children .nav-folder-children {
-  margin-left: 0;
-  padding-left: 0;
-  border-left: unset !important;
-  border-radius: 0px;
-  transition: all 400ms ease-in;
-}
-
 /* active file increase font size and removes normal highlight marker */
-.nav-file-title.is-active {
+/* .nav-file-title.is-active {
   background-color: var(--theme-color-translucent-1);
-}
+} */
 /* Adds hemisphere marker to active file instead */
 .nav-file-title.is-active::before {
   content: "";
