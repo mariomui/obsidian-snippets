@@ -118,16 +118,9 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
 
 
 
-
-
-
-/* active file increase font size and removes normal highlight marker */
-/* .nav-file-title.is-active {
-  background-color: var(--theme-color-translucent-1);
-} */
 /* Adds hemisphere marker to active file instead */
 .nav-file-title.is-active::before {
-  content: "";
+  /* content: "";
   position: absolute;
   bottom: -1px;
   left: 0px;
@@ -138,7 +131,7 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
     var(--theme-color),
     transparent 90%
   );
-  opacity: .9;
+  opacity: .9; */
 }
 
 /* 16 Top level Folders By Starting Digit (0-F)
