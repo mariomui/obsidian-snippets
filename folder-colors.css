@@ -117,17 +117,6 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
 
 
 
-/* General Nav Folder Children (this is the part that expands from each top level folder) */
-.nav-folder.mod-root
-  > .nav-folder-children
-  > .nav-folder
-  > .nav-folder-children {
-  /* padding-left: 0px; */
-  /* border-top: var(--FoldText) 1px solid; */
-  border-radius: 0px 0px 5px 5px;
-  /* padding-bottom: 12px; */
-  padding: 0.1em 0.2em;
-}
 
 .nav-file-title {
   padding-left: 5px;
