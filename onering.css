@@ -22,6 +22,7 @@
   margin-top: -0.2px;
   border-top: 1px solid var(--the-color);
   background-color: var(--the-background-color);
+  opacity: initial !important;
 }
 .status-bar > div.status-bar-item.mod-clickable:hover {
   color: var(--material-color-orange-500);
@@ -39,12 +40,10 @@
   color: var(--status-bar-text-color);
   background-color: var(--status-bar-background);
   border-radius: 0;
-  opacity: initial !important;
 }
 .status-bar > div.status-bar-item:nth-last-child(even) {
   --status-bar-text-color: var(--the-color);
   --status-bar-background: var(--the-background-color);
-  opacity: initial !important;
 }
 .status-bar > .status-bar-item:not(:last-child):before {
   content: "";
