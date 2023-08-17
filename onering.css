@@ -1,12 +1,8 @@
 /* STATUS BAR */
-:root {
+.status-bar {
   --status-bar-height: 21px;
   --the-color: var(--material-color-orange-700);
   --the-background-color: var(--tertiary-blue-800);
-}
-
-/* STATUS BAR */
-.status-bar {
   --status-bar-radius: 0;
   justify-content: flex-end;
   gap: 0px;
