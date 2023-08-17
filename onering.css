@@ -392,6 +392,7 @@
   border: 3px solid blue;
 }
 
+/* General Nav Folder Children (this is the part that expands from each top level folder) */
 /* STATUS BAR */
 .status-bar {
   --status-bar-height: 21px;
