@@ -104,9 +104,7 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
 }
 
 /* Set up explorer container margins */
-.nav-files-container {
-  margin: 0px 5px;
-}
+
 
 /* 
 .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title {
@@ -117,13 +115,7 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
 } 
 */
 
-/* Rounded borders */
-.nav-folder.mod-root
-  > .nav-folder-children
-  > .nav-folder.is-collapsed
-  > .nav-folder-title {
-  border-radius: 5px;
-}
+
 
 /* General Nav Folder Children (this is the part that expands from each top level folder) */
 .nav-folder.mod-root
