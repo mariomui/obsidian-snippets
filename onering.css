@@ -380,18 +380,14 @@
 .nav-folder.mod-root > .nav-folder-children > .nav-folder.is-collapsed > .nav-folder-title {
   border-radius: 5px;
 }
-.nav-folder.mod-root > .nav-folder-children .nav-folder .nav-folder-title {
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title {
   color: var(--FoldText);
   padding-left: 0.3em !important;
   margin-top: 0.1em;
   border-radius: 0.5em 1em 0em 1px;
 }
-.nav-folder.mod-root > .nav-folder-children .nav-folder .nav-folder-title > .nav-folder-collapse-indicator {
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title > .nav-folder-collapse-indicator {
   display: none; /* Remove collapse arrow from top level folders */
-}
-.nav-folder.mod-root > .nav-folder-children .nav-folder .nav-folder-title .nav-file-title-content {
-  color: var(--FoldText);
-  border: 1px solid blue;
 }
 
 /* General Nav Folder Children (this is the part that expands from each top level folder) */
