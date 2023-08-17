@@ -116,40 +116,6 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
 */
 
 
-
-
-/* Adds hemisphere marker to active file instead */
-/* .nav-file-title.is-active::before { */
-  /* content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 0px;
-  height: 2px;
-  width: 100%;
-  background-image: linear-gradient(
-    to right,
-    var(--theme-color),
-    transparent 90%
-  );
-  opacity: .9; */
-/* } */
-/*  */
-/* 16 Top level Folders By Starting Digit (0-F)
-These are set for me by leading number/letter which also ensures they are in the correct order when sorted alphabetically
-You can change these to match your use case.
-*/
-
-
-
-
-
-/* apply style to any child of a _ prefixed virtual file */
-
-
-.nav-folder.mod-root .nav-file-title[data-path^="Untitled"] {
-  display: none;
-}
-
 /* Scrollbars eliminated */
 .workspace-leaf-content[data-type="file-explorer"] ::-webkit-scrollbar {
   width: 0px;
