@@ -366,6 +366,11 @@
   --nbc: var(--tertiary-blue-800);
 }
 
+/* Remove collapse arrow from top level folders */
+.nav-folder.mod-root .nav-folder-children .nav-folder .nav-folder-title .nav-folder-collapse-indicator {
+  display: none;
+}
+
 /* STATUS BAR */
 .status-bar {
   --status-bar-height: 21px;
