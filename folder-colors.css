@@ -109,41 +109,41 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
 }
 
 /* Remove collapse arrow from top level folders */
-.nav-folder.mod-root {
-  > .nav-folder-children {
-    > .nav-folder-title {
-      > .nav-folder-collapse-indicator {
-        display: none;
-      }
-    }
-  }
+.nav-folder.mod-root 
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title
+  > .nav-folder-collapse-indicator {
+  display: none;
 }
 
-
 /* Top Level Folder Titles */
-/* ## Style File Explorer Internal Container Color */
+ /* ## Style File Explorer Internal Container Color */
 .nav-folder.mod-root {
   border-radius: 0.5em 2em 0.4em 0.2em;
 
   /* background: linear-gradient(to bottom, #112, #124); */
 }
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title {
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title {
   color: var(--FoldText);
   padding-left: 0.3em !important;
-  margin-top: 0.1em;
-  /* space between top level sections */
+  margin-top: 0.1em; /* space between top level sections */
   /* border-radius: 5px 5px 0px 0px; */
   border-radius: 0.5em 1em 0em 1px !important;
 }
-
 /* Rounded borders */
-.nav-folder.mod-root>.nav-folder-children>.nav-folder.is-collapsed>.nav-folder-title {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder.is-collapsed
+  > .nav-folder-title {
   border-radius: 5px;
 }
 
 /* General Nav Folder Children (this is the part that expands from each top level folder) */
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-children {
   /* padding-left: 0px; */
   /* border-top: var(--FoldText) 1px solid; */
   border-radius: 0px 0px 5px 5px;
@@ -171,7 +171,6 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
 .nav-file-title.is-active {
   background-color: var(--theme-color-translucent-1);
 }
-
 /* Adds hemisphere marker to active file instead */
 .nav-file-title.is-active::before {
   content: "";
@@ -180,9 +179,11 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
   left: 0px;
   height: 2px;
   width: 100%;
-  background-image: linear-gradient(to right,
-      var(--theme-color),
-      transparent 90%);
+  background-image: linear-gradient(
+    to right,
+    var(--theme-color),
+    transparent 90%
+  );
   opacity: .9;
 }
 
@@ -190,128 +191,248 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
 These are set for me by leading number/letter which also ensures they are in the correct order when sorted alphabetically
 You can change these to match your use case.
 */
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="📂"] {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="📂"] {
   background-color: var(--Fold0);
 }
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="📂"]+.nav-folder-children {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="📂"]
+  + .nav-folder-children {
   background-color: var(--Fold0-1);
 }
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="0"],
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="0"]+.nav-folder-children {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="0"],
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="0"]
+  + .nav-folder-children {
   background-color: var(--Fold0);
 }
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="1"],
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="1"]+.nav-folder-children {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="1"],
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="1"]
+  + .nav-folder-children {
   background-color: var(--Fold1);
 }
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="2"],
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="2"]+.nav-folder-children {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="2"],
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="2"]
+  + .nav-folder-children {
   background-color: var(--Fold2);
 }
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="3"],
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="3"]+.nav-folder-children {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="3"],
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="3"]
+  + .nav-folder-children {
   background-color: var(--Fold3);
 }
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="4"],
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="4"]+.nav-folder-children {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="4"],
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="4"]
+  + .nav-folder-children {
   background-color: var(--Fold4);
 }
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="5"],
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="5"]+.nav-folder-children {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="5"],
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="5"]
+  + .nav-folder-children {
   background-color: var(--Fold5);
 }
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="6"],
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="6"]+.nav-folder-children {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="6"],
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="6"]
+  + .nav-folder-children {
   background-color: var(--Fold6);
 }
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="7"],
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="7"]+.nav-folder-children {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="7"],
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="7"]
+  + .nav-folder-children {
   background-color: var(--Fold7);
 }
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="8"],
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="8"]+.nav-folder-children {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="8"],
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="8"]
+  + .nav-folder-children {
   background-color: var(--Fold8);
 }
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="9"],
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="9"]+.nav-folder-children {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="9"],
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="9"]
+  + .nav-folder-children {
   background-color: var(--Fold9);
 }
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="A"] {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="A"] {
   background-color: var(--FoldA);
 }
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="A"]+.nav-folder-children {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="A"]
+  + .nav-folder-children {
   background-color: var(--FoldA-1);
 }
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="B_"] {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="B_"] {
   background-color: var(--FoldB);
 }
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="B_"]+.nav-folder-children {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="B_"]
+  + .nav-folder-children {
   background-color: var(--FoldB-1);
 }
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="C"] {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="C"] {
   background-color: var(--FoldC);
 }
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="C"]+.nav-folder-children {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="C"]
+  + .nav-folder-children {
   background-color: var(--FoldC-1);
 }
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="D"] {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="D"] {
   background-color: var(--FoldD);
 }
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="D"]+.nav-folder-children {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="D"]
+  + .nav-folder-children {
   background-color: var(--FoldD-1);
 }
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="E"],
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="E"]+.nav-folder-children {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="E"],
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="E"]
+  + .nav-folder-children {
   background-color: var(--FoldE);
 }
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="F"],
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="F"]+.nav-folder-children {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="F"],
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="F"]
+  + .nav-folder-children {
   background-color: var(--FoldF);
 }
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Y_"] {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="Y_"] {
   background-color: var(--FoldTT);
 }
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Y_"]+.nav-folder-children {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="Y_"]
+  + .nav-folder-children {
   background-color: var(--FoldTT-1);
 }
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Z"] {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="Z"] {
   background-color: var(--FoldZ);
 }
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Z"]+.nav-folder-children {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="Z"]
+  + .nav-folder-children {
   background-color: var(--FoldZ-1);
 }
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="_"]+.nav-folder-children {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title[data-path^="_"]
+  + .nav-folder-children {
   /* display: none; */
 }
 
 /* apply style to any child of a _ prefixed virtual file */
-.nav-folder.mod-root .nav-file>.nav-file-title[data-path^="_"] {
+.nav-folder.mod-root .nav-file > .nav-file-title[data-path^="_"] {
   border-bottom: 1px solid var(--secondary);
   display: none;
 }
@@ -327,38 +448,87 @@ You can change these to match your use case.
 }
 
 /* Relationship lines for 2nd, 3rd, and 4th level folders */
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-children
+  > .nav-file {
+  border-left: var(--nestlinestyle1) var(--nestlinesize1) var(--nestlinecolor1);
+  margin-left: 12px;
+}
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-children
+  > .nav-folder {
   border-left: var(--nestlinestyle1) var(--nestlinesize1) var(--nestlinecolor1);
   margin-left: 12px;
 }
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder {
-  border-left: var(--nestlinestyle1) var(--nestlinesize1) var(--nestlinecolor1);
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-children
+  > .nav-file {
+  border-left: var(--nestlinestyle2) var(--nestlinesize2) var(--nestlinecolor2);
   margin-left: 12px;
 }
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-children
+  > .nav-folder {
   border-left: var(--nestlinestyle2) var(--nestlinesize2) var(--nestlinecolor2);
   margin-left: 12px;
 }
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder {
-  border-left: var(--nestlinestyle2) var(--nestlinesize2) var(--nestlinecolor2);
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-children
+  > .nav-file {
+  border-left: var(--nestlinestyle3) var(--nestlinesize3) var(--nestlinecolor3);
   margin-left: 12px;
 }
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-children
+  > .nav-folder {
   border-left: var(--nestlinestyle3) var(--nestlinesize3) var(--nestlinecolor3);
   margin-left: 12px;
 }
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder {
-  border-left: var(--nestlinestyle3) var(--nestlinesize3) var(--nestlinecolor3);
-  margin-left: 12px;
-}
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>*,
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>*+.nav-folder-children {
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > *,
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > *
+  + .nav-folder-children {
   margin-left: 0 !important;
 }
 
@@ -366,6 +536,9 @@ You can change these to match your use case.
   padding-left: 0.2em !important;
 } */
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title-content {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title-content {
   padding-left: 0.5em !important;
 }
