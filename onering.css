@@ -371,7 +371,7 @@
   border-radius: 0.5em 2em 0.4em 0.2em;
 }
 .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title > .nav-folder-collapse-indicator {
-  display: none;
+  display: none; /* Remove collapse arrow from top level folders */
 }
 
 /* STATUS BAR */
