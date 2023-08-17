@@ -294,7 +294,7 @@ progress::-moz-progress-bar {
 }
 
 /** Make bullet points more readable **/
-.cm-line:nth-child(odd) {
+.cm-line:nth-child(even) {
   color: var(--material-color-deep-purple-200);
 }
 input.task-list-item-checkbox[type="checkbox"] {
