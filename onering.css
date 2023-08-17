@@ -386,9 +386,10 @@
 .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title > .nav-folder-collapse-indicator {
   display: none; /* Remove collapse arrow from top level folders */
 }
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children {
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title > .nav-folder-children {
   border-radius: 0px 0px 5px 5px;
   padding: 0.1em 0.2em;
+  border: 3px solid blue;
 }
 
 /* STATUS BAR */
