@@ -138,20 +138,8 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
 These are set for me by leading number/letter which also ensures they are in the correct order when sorted alphabetically
 You can change these to match your use case.
 */
-.nav-folder.mod-root
-  > .nav-folder-children
-  > .nav-folder
-  > .nav-folder-title[data-path^="📂"] {
-  background-color: var(--Fold0);
-}
 
-.nav-folder.mod-root
-  > .nav-folder-children
-  > .nav-folder
-  > .nav-folder-title[data-path^="📂"]
-  + .nav-folder-children {
-  background-color: var(--Fold0-1);
-}
+
 .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
