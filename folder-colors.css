@@ -119,9 +119,7 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
 
 
 
-.nav-file-title-content {
-  color: var(--FoldText);
-}
+
 
 .nav-folder-children .nav-folder-children {
   margin-left: 0;
