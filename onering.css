@@ -501,6 +501,11 @@
   margin-left: 12px;
 }
 
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > *,
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > * + .nav-folder-children {
+  margin-left: 0 !important;
+}
+
 /* STATUS BAR */
 .status-bar {
   --status-bar-height: 21px;
