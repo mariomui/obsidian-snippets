@@ -108,13 +108,15 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
   margin: 0px 5px;
 }
 
+/* 
 .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title {
   color: var(--FoldText);
   padding-left: 0.3em !important;
   margin-top: 0.1em; /* space between top level sections */
-  /* border-radius: 5px 5px 0px 0px; */
+
   border-radius: 0.5em 1em 0em 1px !important;
-}
+} 
+*/
 /* Rounded borders */
 .nav-folder.mod-root
   > .nav-folder-children
