@@ -370,6 +370,12 @@
 .nav-folder.mod-root {
   border-radius: 0.5em 2em 0.4em 0.2em;
 }
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title {
+  color: var(--FoldText);
+  padding-left: 0.3em !important;
+  margin-top: 0.1em;
+  border-radius: 0.5em 1em 0em 1px;
+}
 .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title > .nav-folder-collapse-indicator {
   display: none; /* Remove collapse arrow from top level folders */
 }
