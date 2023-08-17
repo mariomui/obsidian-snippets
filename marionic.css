@@ -1053,3 +1053,29 @@ body:not(.full-file-names) .tree-item-self {
 .workspace-split.mod-root .workspace-tab-header::after  {
    box-shadow: unset !important;
 }
+
+@container (min-width: 95cqw) {
+  .cm-line:has(> .cm-hmd-frontmatter) {
+    transform:translate(-200%,45%);
+    display: flex !important;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-height: 10vw;
+    overflow-y: scroll;
+    max-width: 20ch !important;
+  }
+  .cm-line:has(> .cm-hmd-frontmatter) + .cm-line:has(> .cm-hmd-frontmatter) {
+    /* margin-top: .8em !important; */
+  }
+  .cm-line:has(> .cm-hmd-frontmatter) > * {
+    
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 25ch;
+    /* width: fit-content !important; */
+  }
+
+  .cm-content.cm-lineWrapping .cm-line:has(.cm-hmd-frontmatter) + .cm-line:not(:has(> .cm-hmd-frontmatter)) {
+    margin-bottom: -5% !important;
+  }
