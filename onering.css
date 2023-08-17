@@ -449,6 +449,11 @@
 .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=Z_] + .nav-folder-children {
   background-color: var(--FoldZ-1);
 }
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children {
+  border-radius: 0px 0px 5px 5px;
+  padding: 0.1em 0.2em;
+  border: 3px solid blue;
+}
 .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title {
   color: var(--FoldText);
   padding-left: 0.3em !important;
@@ -459,14 +464,14 @@
   display: none; /* Remove collapse arrow from top level folders */
 }
 
-/* General Nav Folder Children (this is the part that expands from each top level folder) */
-/* General Nav Folder Children (this is the part that expands from each top level folder) */
-> .nav-folder-children {
-  border-radius: 0px 0px 5px 5px;
-  padding: 0.1em 0.2em;
-  border: 3px solid blue;
+/* Scrollbars eliminated */
+.workspace-leaf-content[data-type=file-explorer] ::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
 }
 
+/* General Nav Folder Children (this is the part that expands from each top level folder) */
+/* General Nav Folder Children (this is the part that expands from each top level folder) */
 /* STATUS BAR */
 .status-bar {
   --status-bar-height: 21px;
