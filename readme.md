@@ -25,4 +25,8 @@ Any updates to the structure as well as very nerdy things are included.
 # ---Transient
 
 - [ ] Testing sync function using fswatch to auto sync obsidian located folder to github.
+
   - 📝 [Source of sync code](https://jakemccrary.com/blog/2020/02/25/auto-syncing-a-git-repository/)
+
+- [ ] There are some horrible clashing whenever you update automatically between two computers.
+  - The overwriting of google sync creates extra files in the git folder directory.
