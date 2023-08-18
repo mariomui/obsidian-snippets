@@ -139,9 +139,6 @@
   display: none;
 }
 
-.theme-dark .longform-leaf .cm-hmd-frontmatter {
-  /* color: black; */
-}
 .longform-leaf .markdown-source-view.mod-cm6.is-readable-line-width .inline-title {
   text-shadow: 1px 4px 3px rgb(10 30 71);
 }
