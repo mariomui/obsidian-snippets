@@ -1,43 +1,37 @@
 /* Font for the markdown source (edit) view */
-.longform-leaf .cm-s-obsidian
-{
+.longform-leaf .cm-s-obsidian {
     /* font-family: Atkinson Hyperlegible; */
     /* font-size: 1.1em; */
     line-height: 2em;
 }
 
-.longform-leaf .cm-hmd-frontmatter
-{
+.longform-leaf .cm-hmd-frontmatter {
     font-family: monospace;
     font-size: .8em;
     line-height: 1em;
     color: firebrick;
 }
 
-.longform-leaf .cm-comment
-{
+.longform-leaf .cm-comment {
     font-family: monospace;
     font-size: .8em;
     line-height: 1em;
 }
 
-.longform-leaf .cm-header-1
-{
+.longform-leaf .cm-header-1 {
   font-family: Garamond;
   font-size: 1.5em;
   line-height: 2em;
   font-weight: bold !important;
 }
 
-.longform-leaf .cm-header-2
-{
+.longform-leaf .cm-header-2 {
   font-family: Garamond;
   font-size: 1.2em;
   line-height: 1.5em;
 }
 
-.longform-leaf .cm-header-4
-{
+.longform-leaf .cm-header-4 {
   font-family: Garamond;
   font-size: 1em;
   line-height: 1em;
