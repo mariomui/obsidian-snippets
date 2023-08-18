@@ -362,6 +362,16 @@
   --nbc: var(--tertiary-blue-800);
 }
 
+/* Coloured Folders for Blue Topaz
+
+modified from the snippet created by @Lithou */
+/* Coloured Folders
+a CSS snippet by Lithou
+
+This will allow the colouring of the top level folders into sections that "drop down" when opened. 
+This is currently set to be the same colour regardless of theme, but you can change that by copy/pasting the colors from the root section into light/dark theme then changing them according to preference.
+The colours are rainbow coloured and 16 in number by default. They are shades such that white/lightgrey text shows up the best. Some have a bit let contrast (the lighter blue and the yellow) but should still be visible. Again, change them however you would like. 
+*/
 /* Remove collapse arrow from top level folders */
 .nav-files-container {
   margin: 0px 5px;
@@ -380,13 +390,15 @@
 .nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title {
   padding-left: 5px;
 }
-.nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title.is-active { /* active file increase font size and removes normal highlight marker */
+.nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title.is-active {
+  /* active file increase font size and removes normal highlight marker */
   background-color: var(--theme-color-translucent-1);
 }
 .nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title .nav-file-title-content {
   color: var(--FoldText);
 }
-.nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title[data-path^=_] { /* apply style to any child of a _ prefixed virtual file */
+.nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title[data-path^=_] {
+  /* apply style to any child of a _ prefixed virtual file */
   border-bottom: 1px solid var(--secondary);
   display: none;
 }
@@ -444,7 +456,8 @@
 .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=Z_] + .nav-folder-children {
   background-color: var(--FoldZ-1);
 }
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children { /* General Nav Folder Children (this is the part that expands from each top level folder) */
+.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children {
+  /* General Nav Folder Children (this is the part that expands from each top level folder) */
   border-radius: 0px 0px 5px 5px;
   padding: 0.1em 0.2em;
 }
