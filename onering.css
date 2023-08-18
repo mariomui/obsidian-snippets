@@ -42,6 +42,7 @@
   /* --mm-image: url("https://i.redd.it/5mqp7trvxov51.jpg"); */
   /* ## Cozy 1D1 */
   /* --mm-image: url(https://wallpapercave.com/wp/wp6049353.jpg); */
+  --mm-image: url(https://i.redd.it/soaring-eagle-in-nature-mountain-scenery-wallpaper-1920-1080-v0-tvkmoaab5mla1.jpg?s=51d1428e4378625ad3666d1c1af64bb3a6bccdaa);
   /* Kansas Sunrise */
   /* Sakura Sunrise */
   /* --mm-image: url(https://i.redd.it/0jp6buq50lfb1.png); */
@@ -61,7 +62,8 @@
   /* --mm-image: url("https://i.redd.it/aookl7ly26db1.jpg"); */
   /* # THIS IS NO good Yellowscape */
   /* --mm-image: url("https://i.redd.it/vnbodw5mz5ib1.jpg"); */
-  /* ANIME Wallapers w/action figure */ /* ## Spaceships LOGH */
+  /* ANIME Wallapers w/action figure */
+  /* ## Spaceships LOGH */
   /* --mm-image: url(https://cdnb.artstation.com/p/assets/images/images/003/508/149/large/lorenz-hideyoshi-ruwwe-barbarossa-brunhilde-final-s.jpg); */
   /* ## Evangelion */
   /* --mm-image: url("https://i.imgur.com/tjhUMrN.jpeg"); */
@@ -75,6 +77,8 @@
   --bg-image: var(--mm-image), var(--anu-image);
 }
 
+/* Too light */
+/* --mm-image: url("https://i.redd.it/lt04hk5k3vcb1.jpg"); */
 /* Too light */
 /* --mm-image: url("https://i.redd.it/lt04hk5k3vcb1.jpg"); */
 :root {
