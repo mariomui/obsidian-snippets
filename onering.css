@@ -42,7 +42,6 @@
   /* --mm-image: url("https://i.redd.it/5mqp7trvxov51.jpg"); */
   /* ## Cozy 1D1 */
   /* --mm-image: url(https://wallpapercave.com/wp/wp6049353.jpg); */
-  --mm-image: url(https://i.redd.it/soaring-eagle-in-nature-mountain-scenery-wallpaper-1920-1080-v0-tvkmoaab5mla1.jpg?s=51d1428e4378625ad3666d1c1af64bb3a6bccdaa);
   /* Kansas Sunrise */
   /* Sakura Sunrise */
   /* --mm-image: url(https://i.redd.it/0jp6buq50lfb1.png); */
@@ -58,12 +57,12 @@
   /* Bluescape */
   /* --mm-image: url(https://images4.alphacoders.com/106/1067926.jpg); */
   --mm-image: url(https://images7.alphacoders.com/110/1103663.jpg);
+  --mm-image: url(https://images7.alphacoders.com/110/1103663.jpg);
   /* # Anime girl on School Rooftop */
   /* --mm-image: url("https://i.redd.it/aookl7ly26db1.jpg"); */
   /* # THIS IS NO good Yellowscape */
   /* --mm-image: url("https://i.redd.it/vnbodw5mz5ib1.jpg"); */
-  /* ANIME Wallapers w/action figure */
-  /* ## Spaceships LOGH */
+  /* ANIME Wallapers w/action figure */ /* ## Spaceships LOGH */
   /* --mm-image: url(https://cdnb.artstation.com/p/assets/images/images/003/508/149/large/lorenz-hideyoshi-ruwwe-barbarossa-brunhilde-final-s.jpg); */
   /* ## Evangelion */
   /* --mm-image: url("https://i.imgur.com/tjhUMrN.jpeg"); */
@@ -366,6 +365,10 @@
   --nbc: var(--tertiary-blue-800);
 }
 
+/*
+A-source: https://forum.obsidian.md/t/adding-color-to-obsidian-a-rainbow-of-possibility/12805/11
+B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main/02%20-%20Community%20Expansions/02.05%20All%20Community%20Expansions/CSS%20Snippets/Files%20explorer%20relations%20%26%20color%20%28Mara-Li%29.md
+*/
 /* Coloured Folders for Blue Topaz
 
 modified from the snippet created by @Lithou */
@@ -585,6 +588,13 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
   border-bottom: none;
   -webkit-clip-path: polygon(100% 0, 0 0%, 100% 100%);
           clip-path: polygon(100% 0, 0 0%, 100% 100%);
+}
+
+.workspace-split:is(.mod-left-split, .mod-right-split) .view-content {
+  background-image: var(--mm-image);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .workspace-split:is(.mod-left-split, .mod-right-split) .view-content {
