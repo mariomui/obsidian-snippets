@@ -390,22 +390,6 @@ input.task-list-item-checkbox[type="checkbox"]:checked {
   background-size: 100% 100%;
   background-blend-mode: var(--topbar-blend);
 }
- 
-/* Sync Change 10 */
-/* mama jamma inside window content; */
-.markdown-reading-view,
-.markdown-source-view {
-  
-/* .workspace-leaf-content .view-content  */
-
-  background-image: var(--mm-image);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  /* background-blend-mode: screen; */
-  /* constrain: paint; */
-}
-
 
 .workspace-tabs.mod-top-left-space .workspace-tab-container .workspace-leaf-content[data-type="markdown"] .view-content  {
   background-image: var(--bg-image);
