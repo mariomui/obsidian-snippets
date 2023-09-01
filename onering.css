@@ -52,17 +52,15 @@
   /* # Fantasyscape */
   /* ## Waterworld city */
   /* --mm-image: url(https://images.alphacoders.com/131/1318300.png); */
-  /* Purplescape */
+  /* ## Purplescape */
   /* --mm-image: url(https://i.redd.it/jpuwznzf2wcb1.jpg); */
+  --mm-image: url(https://external-preview.redd.it/qiS6FTlK2fPyKIjCtQnDPlMWaRRc6t8ynBTGES-wK5c.jpg?auto=webp&s=665fac054a914ad24cf877d5e6201384c5f60274);
   /* Bluescape */
   /* --mm-image: url(https://images4.alphacoders.com/106/1067926.jpg); */
-  --mm-image: url(https://images7.alphacoders.com/110/1103663.jpg);
-  --mm-image: url(https://images7.alphacoders.com/110/1103663.jpg);
+  /* ## ANIME Wallapers w/action figure */
   /* # Anime girl on School Rooftop */
   /* --mm-image: url("https://i.redd.it/aookl7ly26db1.jpg"); */
-  /* # THIS IS NO good Yellowscape */
-  /* --mm-image: url("https://i.redd.it/vnbodw5mz5ib1.jpg"); */
-  /* ANIME Wallapers w/action figure */ /* ## Spaceships LOGH */
+  /* ## Spaceships LOGH */
   /* --mm-image: url(https://cdnb.artstation.com/p/assets/images/images/003/508/149/large/lorenz-hideyoshi-ruwwe-barbarossa-brunhilde-final-s.jpg); */
   /* ## Evangelion */
   /* --mm-image: url("https://i.imgur.com/tjhUMrN.jpeg"); */
@@ -76,8 +74,6 @@
   --bg-image: var(--mm-image), var(--anu-image);
 }
 
-/* Too light */
-/* --mm-image: url("https://i.redd.it/lt04hk5k3vcb1.jpg"); */
 /* Too light */
 /* --mm-image: url("https://i.redd.it/lt04hk5k3vcb1.jpg"); */
 :root {
@@ -369,16 +365,6 @@
 A-source: https://forum.obsidian.md/t/adding-color-to-obsidian-a-rainbow-of-possibility/12805/11
 B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main/02%20-%20Community%20Expansions/02.05%20All%20Community%20Expansions/CSS%20Snippets/Files%20explorer%20relations%20%26%20color%20%28Mara-Li%29.md
 */
-/* Coloured Folders for Blue Topaz
-
-modified from the snippet created by @Lithou */
-/* Coloured Folders
-a CSS snippet by Lithou
-
-This will allow the colouring of the top level folders into sections that "drop down" when opened. 
-This is currently set to be the same colour regardless of theme, but you can change that by copy/pasting the colors from the root section into light/dark theme then changing them according to preference.
-The colours are rainbow coloured and 16 in number by default. They are shades such that white/lightgrey text shows up the best. Some have a bit let contrast (the lighter blue and the yellow) but should still be visible. Again, change them however you would like. 
-*/
 /* Remove collapse arrow from top level folders */
 .nav-files-container {
   margin: 0px 5px;
@@ -597,11 +583,8 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
   background-size: 100% 100%;
 }
 
-.workspace-split:is(.mod-left-split, .mod-right-split) .view-content {
-  background-image: var(--mm-image);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+.view-action[aria-label^="Current view: editing"] {
+  display: none;
 }
 
 .markdown-rendered tbody tr:nth-child(odd) {
@@ -612,4 +595,24 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
 }
 .markdown-rendered tbody tr:nth-child(odd) strong {
   color: var(--material-color-deep-purple-200);
+}
+
+/* # Source and reading view for title/file name on content top */
+.markdown-source-view.mod-cm6.is-readable-line-width .metadata-content, .markdown-source-view.mod-cm6.is-readable-line-width .inline-title {
+  color: white;
+  text-shadow: 1px 4px 3px rgb(233, 117, 71);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1em 0.5em;
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 0;
+}
+
+.markdown-source-view.mod-cm6.is-readable-line-width .metadata-content {
+  text-shadow: initial;
+}
+
+.markdown-reading-view .mod-header:has(~ .obsidian-banner-wrapper) > .inline-title {
+  text-shadow: 1px 4px 3px rgb(233, 117, 71);
+  color: white;
+  margin-left: 5%;
 }
