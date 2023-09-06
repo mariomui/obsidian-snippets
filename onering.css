@@ -623,6 +623,7 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
   border-radius: 0 1em 1em 0;
 }
 .markdown-source-view.mod-cm6.is-readable-line-width .markdown-embed .markdown-embed-link[aria-label="Open link"] {
+  padding-top: 1em;
   margin-right: 1em;
 }
 
