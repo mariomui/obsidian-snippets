@@ -877,12 +877,29 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
   display: block;
   height: 0.9em;
   border: 1px solid #1565c0;
-  -webkit-clip-path: polygon(0 26%, 50% 57%, 100% 25%);
-          clip-path: polygon(0 26%, 50% 57%, 100% 25%);
   margin-top: 0.2em;
   margin-bottom: 0.5em;
-  background-image: repeating-linear-gradient(-75deg, #0d47a1 0%, #0d91a1 4%, #0da198 8%, #1565c0 20%);
   padding: 0.1em;
+  background-image: repeating-linear-gradient(-75deg, #0d47a1 0%, #800da1 4%, #670da1 8%, #1565c0 10%);
+}
+.HyperMD-header .cm-header-2:last-child:after {
+  background-image: repeating-linear-gradient(-75deg, #ffcdd2 0%, #ffcdeb 4%, #ffcdf3 8%, #ef9a9a 10%);
+  -webkit-clip-path: polygon(0 26%, 50% 55%, 100% 25%);
+          clip-path: polygon(0 26%, 50% 55%, 100% 25%);
+}
+.HyperMD-header .cm-header-3:last-child:after {
+  width: 85%;
+  margin: 0 auto;
+  background-image: repeating-linear-gradient(-75deg, #e64a19 0%, #e6194f 4%, #e61971 8%, #bf360c 10%);
+  -webkit-clip-path: polygon(0 26%, 50% 90%, 100% 25%);
+          clip-path: polygon(0 26%, 50% 90%, 100% 25%);
+}
+.HyperMD-header .cm-header-4:last-child:after {
+  width: 70%;
+  margin: 0 auto;
+  background-image: repeating-linear-gradient(-75deg, #388e3c 0%, #5f8e38 4%, #6d8e38 8%, #1b5e20 10%);
+  -webkit-clip-path: polygon(0 26%, 50% 130%, 100% 25%);
+          clip-path: polygon(0 26%, 50% 130%, 100% 25%);
 }
 
 .markdown-rendered tbody tr:nth-child(odd) {
