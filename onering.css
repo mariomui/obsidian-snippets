@@ -905,6 +905,7 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 .markdown-source-view .cm-preview-code-block.cm-embed-block.markdown-rendered .internal-query {
   border: 2px solid #ef6c00;
   max-height: 30vmin;
+  overflow-y: scroll;
 }
 .markdown-source-view .embedded-backlinks .backlink-pane {
   max-height: 30vmin;
