@@ -89,96 +89,13 @@ cite a:link {
   padding-left: 0.1em;
 }
 
-/* ## Customize the colons for indentingg */
-.markdown-rendered h2::before {
-  content: ": ";
-  position: relative;
-  left: -0.05em;
-  color: var(--accent);
-}
-.markdown-rendered h3::before {
-  content: ":: ";
-  position: relative;
-  left: -0.05em;
-  color: var(--accent);
-}
-.markdown-rendered h4::before {
-  content: "::: ";
-  position: relative;
-  left: -0.05em;
-  color: var(--accent);
-}
-.markdown-rendered h5::before {
-  content: ":::: ";
-  position: relative;
-  left: -0.05em;
-  color: var(--accent);
-}
+
 
 /*** preview mode end****/
 
 /** : Tranclusion/Embed sections */
 
-/* :: hide file name on transcludes */
-.internal-embed[alt*="nlk"] .embed-title.markdown-embed-title {
-  display: none;
-}
 
-/** :: hide transcluded headers for nlk **/
-.internal-embed[alt*="nlk"].markdown-embed
-  .markdown-preview-sizer
-  > div:nth-of-type(3) {
-  display: none;
-}
-
-.internal-embed[alt*="nlk"].markdown-embed,
-.internal-embed[alt*="nlk"].markdown-embed
-  .markdown-preview-sizer.markdown-preview-section {
-  padding: 0 !important;
-  padding-left: 5px !important;
-}
-
-/* when previewing nlk */
-span[alt*="nlk"].internal-embed.markdown-embed {
-  padding: 0;
-}
-span[alt*="nlk"].internal-embed.markdown-embed
-  .markdown-preview-sizer.markdown-preview-section {
-  padding-left: 0 !important;
-}
-
-/** :: no pointer links **/
-
-.internal-embed[alt*="nlk"] .embed-title.markdown-embed-title {
-  display: none;
-}
-
-/*  # OLK */
-/** :: hide transcluded headers for olk (omit linkage) **/
-.internal-embed[alt*="olk"].markdown-embed
-  .markdown-preview-sizer
-  > div:nth-of-type(3) {
-  display: none;
-}
-/*  ## OLK::Remove Scrollbar */
-.internal-embed.markdown-embed[alt*="olk"] .markdown-embed-title .markdown-preview-view.markdown-rendered.show-indentation-guide.allow-fold-headings.allow-fold-lists {
-  overflow: hidden;
-}
-
-/* This one works */
-.internal-embed[alt*="olk"].markdown-embed,
-.internal-embed[alt*="olk"].markdown-embed
-  .markdown-preview-sizer.markdown-preview-section {
-  padding: 0 !important;
-  padding-left: 5px !important;
-  pointer-events: none;
-}
-
-
-/** WORKING EMBED CONTAINER **/
-.internal-embed.markdown-embed.inline-embed.is-loaded {
-  padding-left: 0 !important;
-}
 
 /*  Code-block in Reading view embeds  */
 .markdown-reading-view .internal-embed.markdown-embed.inline-embed.is-loaded .markdown-embed-content .markdown-preview-view.markdown-rendered {
