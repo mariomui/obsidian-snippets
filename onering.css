@@ -1022,6 +1022,10 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
   padding-left: 0.4em;
 }
 
+.markdown-source-view .cm-preview-code-block.cm-embed-block.markdown-rendered .block-language-dataviewjs ul.dataview.list-view-ul:nth-of-type(1) ul.dataview.dataview-ul.dataview-result-list-ul:nth-of-type(1) li.dataview-result-list-li:has(ul) li.dataview-result-list-li:not(:first-of-type) a {
+  color: #f57c00;
+}
+
 .canvas-wrapper, .markdown-source-view {
   /*  # OLK */
   /** :: hide transcluded headers for olk (omit linkage) **/
