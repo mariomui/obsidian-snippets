@@ -1,3 +1,11 @@
+.internal-query .search-result-container {
+  background-image: var(--mm-image);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-blend-mode: overlay;
+}
+
 :root {
   --accent: #37cdbe;
   --primary: #570df8;
@@ -10,7 +18,7 @@
   --error: #f87272;
   --book-source: #8272d0;
   --theme-color-translucent-1: #2f93e426;
-  --progress-color: var(--accent);
+  --progress-color: #37cdbe;
   --progress-bg-color: var(--primary);
   /* # RANDOM GLOBALS */
   /* ## Translucency Helpers */
@@ -41,7 +49,7 @@
   /* ## Cozy city alley */
   /* --mm-image: url("https://i.redd.it/5mqp7trvxov51.jpg"); */
   /* ## Cozy 1D1 */
-  /* --mm-image: url(https://wallpapercave.com/wp/wp6049353.jpg); */
+  --mm-image: url(https://wallpapercave.com/wp/wp6049353.jpg);
   /* Kansas Sunrise */
   /* Sakura Sunrise */
   /* --mm-image: url(https://i.redd.it/0jp6buq50lfb1.png); */
@@ -52,7 +60,6 @@
   /* # Fantasyscape */
   /* ## Waterworld city */
   /* --mm-image: url(https://images.alphacoders.com/131/1318300.png); */
-  --mm-image: url("https://i.imgur.com/ZbyNlmh.png");
   /* ## Purplescape */
   /* --mm-image: url(https://i.redd.it/jpuwznzf2wcb1.jpg); */
   /* Bluescape */
@@ -872,6 +879,56 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
   --nbc: var(--tertiary-blue-800);
 }
 
+/* # H1 styling Source */
+/* ## H1 reading view */
+.markdown-reading-view .markdown-preview-sizer.markdown-preview-section h1[data-heading] {
+  background-image: linear-gradient(to bottom, #ff5722, #b71c1c);
+  border: 2px solid var(--material-color-brown-900);
+  color: var(--material-color-brown-50);
+  padding: 0.2em 1em;
+  border-radius: 0.5em 1.8em 0.3em 0.5em;
+}
+.markdown-reading-view .markdown-preview-sizer.markdown-preview-section h1[data-heading] > a.tag .HyperMD-header.HyperMD-header-1.cm-line > span ~ span,
+.markdown-reading-view .markdown-preview-sizer.markdown-preview-section .cm-contentContainer .HyperMD-header.HyperMD-header-1.cm-line > span ~ span {
+  border: unset;
+  padding: 0.05em 0.05em;
+}
+
+.markdown-source-view .cm-contentContainer .HyperMD-header.HyperMD-header-1 {
+  /* ## H1 when there is a tag inside it.  */
+  /* on hover blinks */
+}
+.markdown-source-view .cm-contentContainer .HyperMD-header.HyperMD-header-1.cm-line {
+  background-image: linear-gradient(to bottom, #ff5722, #b71c1c);
+  border: 2px solid var(--material-color-brown-900);
+  color: var(--material-color-brown-50);
+  padding: 0.2em 1em;
+  border-radius: 0.5em 1.8em 0.3em 0.5em;
+}
+.markdown-source-view .cm-contentContainer .HyperMD-header.HyperMD-header-1.cm-line:has(> span.cm-hashtag) {
+  background-image: linear-gradient(to bottom, #ff5722, #b71c1c);
+  outline: 2px solid --material-color-deep-orange-300;
+}
+.markdown-source-view .cm-contentContainer .HyperMD-header.HyperMD-header-1.cm-line:has(> span.cm-hashtag) > span {
+  background-color: unset;
+  color: var(--material-color-deep-orange-300);
+}
+.markdown-source-view .cm-contentContainer .HyperMD-header.HyperMD-header-1.cm-line:has(> span.cm-hashtag):hover > span {
+  background-color: unset;
+  color: var(--material-color-deep-orange-200);
+  /* font: small-caption */
+}
+
+.markdown-source-view .HyperMD-header .HyperMD-header-1.cm-line + .HyperMD-header.HyperMD-header-1.cm-line {
+  background: var(--material-color-deep-orange-800);
+  outline: 2px solid var(--material-color-brown-900);
+  /* color: var(--material-color-brown-50); */
+  color: var(--material-color-brown-50);
+  /* padding: 0.2em 1em; */
+  border-radius: 0.5em 1.8em 0.3em 0.5em;
+  border: 10px solid;
+}
+
 .HyperMD-header :is(.cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6):last-child:after {
   content: "";
   display: block;
@@ -902,13 +959,197 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
           clip-path: polygon(0 26%, 50% 130%, 100% 25%);
 }
 
-.markdown-source-view .cm-preview-code-block.cm-embed-block.markdown-rendered .internal-query {
+/* # H1 styling */
+.markdown-source-view .markdown-embed-content .markdown-preview-sizer.markdown-preview-section h1[data-heading="="] {
+  background: var(--material-color-deep-orange-900);
+  outline: 2px solid var(--material-color-brown-700);
+  padding: 0.1em 2em;
+  color: var(--tertiary-blue-800);
+  border-radius: 0 0 50px 50px;
+}
+
+.markdown-preview-sizer.markdown-preview-section h1[data-heading^="---"] {
+  background: var(--material-color-red-900);
+  border: 2px dashed var(--material-color-brown-700);
+  padding: 0.2em 3em;
+  border-radius: 0.5em 1.8em 0.3em 0.5em;
+}
+
+.cm-contentContainer .HyperMD-header.HyperMD-header-5.cm-line:has(.is-collapsed) > .cm-header.cm-header-5::before, .cm-contentContainer .HyperMD-header.HyperMD-header-5.cm-line > *:last-child::before, .cm-contentContainer .HyperMD-header.HyperMD-header-4.cm-line:has(.is-collapsed) > .cm-header.cm-header-4::before, .cm-contentContainer .HyperMD-header.HyperMD-header-4.cm-line > *:last-child::before, .cm-contentContainer .HyperMD-header.HyperMD-header-3.cm-line:has(.is-collapsed) > .cm-header.cm-header-3::before, .cm-contentContainer .HyperMD-header.HyperMD-header-3.cm-line > *:last-child::before, .cm-contentContainer .HyperMD-header.HyperMD-header-2.cm-line:has(.is-collapsed) > .cm-header.cm-header-2::before, .cm-contentContainer .HyperMD-header.HyperMD-header-2.cm-line > *:last-child::before {
+  position: relative;
+  left: -0.05em;
+  color: var(--accent);
+}
+
+.cm-contentContainer .HyperMD-header.HyperMD-header-2.cm-line > *:last-child::before {
+  content: ": ";
+}
+.cm-contentContainer .HyperMD-header.HyperMD-header-2.cm-line:has(.is-collapsed) > .cm-header.cm-header-2::before {
+  content: ": ";
+}
+.cm-contentContainer .HyperMD-header.HyperMD-header-3.cm-line > *:last-child::before {
+  content: ":: ";
+}
+.cm-contentContainer .HyperMD-header.HyperMD-header-3.cm-line:has(.is-collapsed) > .cm-header.cm-header-3::before {
+  content: ":: ";
+}
+.cm-contentContainer .HyperMD-header.HyperMD-header-4.cm-line > *:last-child::before {
+  content: "::: ";
+}
+.cm-contentContainer .HyperMD-header.HyperMD-header-4.cm-line:has(.is-collapsed) > .cm-header.cm-header-4::before {
+  content: "::: ";
+}
+.cm-contentContainer .HyperMD-header.HyperMD-header-5.cm-line > *:last-child::before {
+  content: ":::: ";
+}
+.cm-contentContainer .HyperMD-header.HyperMD-header-5.cm-line:has(.is-collapsed) > .cm-header.cm-header-5::before {
+  content: ":::: ";
+}
+
+.internal-query .search-result-container {
+  background-image: var(--mm-image);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-blend-mode: overlay;
+}
+
+.markdown-source-view .cm-preview-code-block.cm-embed-block.markdown-rendered .block-language-dataviewjs, .markdown-reading-view .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section .block-language-dataviewjs {
+  border: 2px solid var(--material-color-deep-orange);
+  border-right-width: 1em;
+  background-image: var(--dark-blue-grad);
+  border-radius: 0.5em 0.5em;
+  padding-left: 0.4em;
+}
+
+.canvas-wrapper, .markdown-source-view {
+  /*  # OLK */
+  /** :: hide transcluded headers for olk (omit linkage) **/
+}
+.canvas-wrapper .cm-preview-code-block.cm-embed-block.markdown-rendered .internal-query, .markdown-source-view .cm-preview-code-block.cm-embed-block.markdown-rendered .internal-query {
   border: 2px solid #ef6c00;
   max-height: 30vmin;
   overflow-y: scroll;
 }
-.markdown-source-view .embedded-backlinks .backlink-pane {
+.canvas-wrapper .embedded-backlinks .backlink-pane, .markdown-source-view .embedded-backlinks .backlink-pane {
   max-height: 30vmin;
+}
+.canvas-wrapper .markdown-embed .markdown-embed-link[aria-label="Open link"], .markdown-source-view .markdown-embed .markdown-embed-link[aria-label="Open link"] {
+  padding-top: 1em;
+  margin-right: 1em;
+}
+.canvas-wrapper .internal-embed[alt*=olk].markdown-embed,
+.canvas-wrapper .internal-embed[alt*=olk].markdown-embed, .markdown-source-view .internal-embed[alt*=olk].markdown-embed,
+.markdown-source-view .internal-embed[alt*=olk].markdown-embed {
+  /*  ## OLK::Remove Scrollbar */
+}
+.canvas-wrapper .internal-embed[alt*=olk].markdown-embed .markdown-preview-sizer > div:nth-of-type(3),
+.canvas-wrapper .internal-embed[alt*=olk].markdown-embed .markdown-preview-sizer > div:nth-of-type(3), .markdown-source-view .internal-embed[alt*=olk].markdown-embed .markdown-preview-sizer > div:nth-of-type(3),
+.markdown-source-view .internal-embed[alt*=olk].markdown-embed .markdown-preview-sizer > div:nth-of-type(3) {
+  display: none;
+}
+.canvas-wrapper .internal-embed[alt*=olk].markdown-embed .markdown-embed-title .markdown-preview-view.markdown-rendered.show-indentation-guide.allow-fold-headings.allow-fold-lists,
+.canvas-wrapper .internal-embed[alt*=olk].markdown-embed .markdown-embed-title .markdown-preview-view.markdown-rendered.show-indentation-guide.allow-fold-headings.allow-fold-lists, .markdown-source-view .internal-embed[alt*=olk].markdown-embed .markdown-embed-title .markdown-preview-view.markdown-rendered.show-indentation-guide.allow-fold-headings.allow-fold-lists,
+.markdown-source-view .internal-embed[alt*=olk].markdown-embed .markdown-embed-title .markdown-preview-view.markdown-rendered.show-indentation-guide.allow-fold-headings.allow-fold-lists {
+  overflow: hidden;
+}
+.canvas-wrapper .internal-embed[alt*=olk].markdown-embed .markdown-preview-sizer.markdown-preview-section,
+.canvas-wrapper .internal-embed[alt*=olk].markdown-embed .markdown-preview-sizer.markdown-preview-section, .markdown-source-view .internal-embed[alt*=olk].markdown-embed .markdown-preview-sizer.markdown-preview-section,
+.markdown-source-view .internal-embed[alt*=olk].markdown-embed .markdown-preview-sizer.markdown-preview-section {
+  padding: 0 !important;
+  padding-left: 5px !important;
+  pointer-events: none;
+}
+.canvas-wrapper .internal-embed[alt*=olk].markdown-embed .markdown-embed-link[aria-label="Open link"],
+.canvas-wrapper .internal-embed[alt*=olk].markdown-embed .markdown-embed-link[aria-label="Open link"], .markdown-source-view .internal-embed[alt*=olk].markdown-embed .markdown-embed-link[aria-label="Open link"],
+.markdown-source-view .internal-embed[alt*=olk].markdown-embed .markdown-embed-link[aria-label="Open link"] {
+  display: none;
+}
+/** WORKING EMBED CONTAINER **/
+.internal-embed.markdown-embed.inline-embed.is-loaded {
+  padding-left: 0 !important;
+}
+
+/** : Tranclusion/Embed sections */
+.internal-embed[alt*=nlk].markdown-embed {
+  /* hide file name on transcludes */
+}
+.internal-embed[alt*=nlk].markdown-embed .embed-title.markdown-embed-title {
+  display: none;
+}
+.internal-embed[alt*=nlk].markdown-embed .markdown-preview-sizer.markdown-preview-section {
+  padding: 2em 0 0 0 !important;
+  padding-left: 5px !important;
+}
+.internal-embed[alt*=nlk].markdown-embed .markdown-preview-sizer > div:nth-of-type(3) {
+  display: none;
+}
+
+span[alt*=nlk].internal-embed.markdown-embed {
+  padding: 0;
+}
+span[alt*=nlk].internal-embed.markdown-embed .markdown-preview-sizer.markdown-preview-section {
+  padding-left: 0 !important;
+}
+
+.markdown-source-view .cm-contentContainer .internal-embed[alt*=nlk] .markdown-embed-content .markdown-preview-view .markdown-preview-sizer.markdown-preview-section h1[data-heading="="] {
+  display: none;
+}
+
+/*  Code-block in Reading view embeds  */
+.markdown-reading-view .internal-embed.markdown-embed.inline-embed.is-loaded .markdown-embed-content .markdown-preview-view.markdown-rendered {
+  background: var(--tertiary-blue-700);
+  border-radius: 0 0.2em 0 0;
+}
+
+.workspace.is-right-sidedock-open .workspace-split.mod-right-split .workspace-tabs .workspace-tab-container .workspace-leaf .view-content > div:first-of-type {
+  padding: 0.1em 0.5em;
+}
+.workspace.is-right-sidedock-open .workspace-split.mod-right-split .workspace-tabs .workspace-tab-container .workspace-leaf .workspace-leaf-content li {
+  background: transparent;
+}
+
+.internal-query .search-result-container {
+  background-image: var(--mm-image);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-blend-mode: overlay;
+}
+
+.markdown-preview-view .cm-contentContainer.cm-contentContainer .cm-embed-block.cm-table-widget div.markdown-rendered:has(table), .markdown-source-view .cm-contentContainer.cm-contentContainer .cm-embed-block.cm-table-widget div.markdown-rendered:has(table) {
+  padding: 0.4em 0.4em;
+  border: 1px solid #7b1fa2;
+}
+.markdown-preview-view .cm-contentContainer.cm-contentContainer > .cm-content table, .markdown-source-view .cm-contentContainer.cm-contentContainer > .cm-content table {
+  outline: 4px solid #7b1fa2;
+  background: transparent;
+}
+
+/* # API specific Feature To ONLY TAKE API BETWEEN = and --- */
+/* NAME: SELECTED-TRANSCLUSION-PREVIEW CSS SNIPPET */
+.popover.hover-popover .markdown-embed.is-loaded .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section div:has(> h1[data-heading="-"]) ~ div:not(:has(h1[data-heading="="])) {
+  display: none;
+}
+
+.popover.hover-popover .markdown-embed.is-loaded .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section div:has(> h1[data-heading="="]) ~ div:not(:has(h1[data-heading^="---"])) {
+  display: initial;
+}
+
+.popover.hover-popover .markdown-embed.is-loaded .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section div:has(> h1[data-heading="-"]) {
+  display: none;
+}
+
+.popover.hover-popover .markdown-embed.is-loaded .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section div:has(> h1[data-heading^="---"]) ~ * > * {
+  display: none;
+}
+
+.popover.hover-popover .markdown-embed-content .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section {
+  padding: 0;
+}
+
+.popover.hover-popover .markdown-embed-content .markdown-preview-sizer.markdown-preview-section .markdown-rendered h2 {
+  border: 1px solid blue;
 }
 
 .markdown-rendered tbody tr:nth-child(odd) {
@@ -951,4 +1192,39 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
   text-shadow: 1px 4px 3px rgb(233, 117, 71);
   color: white;
   margin-left: 5%;
+}
+
+.yt-transcript__transcript-block {
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
+}
+
+.internal-query .internal-query-header {
+  display: none;
+}
+.internal-query .search-result-container .search-results-children .search-result .search-result-file-title {
+  font-size: larger;
+}
+.internal-query .search-result-container .search-results-children .search-result .search-result-file-matches {
+  font-size: medium;
+}
+.internal-query .search-result-container .search-results-children .tree-item.search-result:nth-child(2n+1) {
+  background: #3e2723;
+}
+.internal-query .search-result-container .search-results-children .tree-item.search-result:nth-child(2n) {
+  background: #7b1fa2;
+}
+
+.heading-list-item.located .text-wrap:not(.located) .text {
+  color: var(--accent);
+}
+
+.markdown-source-view .cm-contentContainer .HyperMD-list-line.HyperMD-list-line-1.cm-line span.cm-header.cm-header-3.cm-list-1 {
+  color: #fff176 !important;
+}
+
+.markdown-embed-content .block-language-dataviewjs button {
+  background-image: linear-gradient(to right, #4e342e, #1565c0);
+  border: 1px solid white;
 }

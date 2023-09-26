@@ -676,32 +676,7 @@ input.task-list-item-checkbox[type="checkbox"]:checked {
   z-index: 50;
 }
 
-/* API specific Feature To ONLY TAKE API BETWEEN = and --- */
-/* NAME: SELECTED-TRANSCLUSION-PREVIEW CSS SNIPPET */
-.popover.hover-popover .markdown-embed.is-loaded 
-.markdown-preview-view.markdown-rendered 
-.markdown-preview-sizer.markdown-preview-section 
-div:has(> h1[data-heading="-"]) ~ div:not(:has(h1[data-heading="="])) {
-  display: none;
-}
-.popover.hover-popover .markdown-embed.is-loaded 
-.markdown-preview-view.markdown-rendered 
-.markdown-preview-sizer.markdown-preview-section 
-div:has(> h1[data-heading="="]) ~ div:not(:has(h1[data-heading^="---"])) {
-  display: initial;
-}
-.popover.hover-popover .markdown-embed.is-loaded 
-.markdown-preview-view.markdown-rendered 
-.markdown-preview-sizer.markdown-preview-section 
-div:has(> h1[data-heading="-"]) {
-  display: none;
-}
-.popover.hover-popover .markdown-embed.is-loaded 
-.markdown-preview-view.markdown-rendered 
-.markdown-preview-sizer.markdown-preview-section 
-div:has(> h1[data-heading^='---']) ~ * > * {
-  display: none
-}
+
 
 /*  */
 
