@@ -396,6 +396,7 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 }
 .nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title .nav-file-title-content {
   color: var(--FoldText);
+  white-space: pre-wrap;
 }
 .nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title[data-path^=_] {
   /* apply style to any child of a _ prefixed virtual file */
