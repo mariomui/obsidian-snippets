@@ -205,42 +205,6 @@ body.minimal-theme {
   --max-width: 100%;
 }
 
-.markdown-preview-view progress.mario-progress,
-.markdown-rendered progress.mario-progress,
-.markdown-source-view.is-live-preview progress.mario-progress {
-  appearance: none;
-  height: 2em;
-  width: 100%;
-  color: --var(--primary);
-}
-
-.markdown-preview-view progress.mario-progress::-webkit-progress-bar,
-.markdown-rendered progress.mario-progress::-webkit-progress-bar,
-.markdown-source-view.is-live-preview
-  progress.mario-progress::-webkit-progress-bar {
-  border: 0.2em solid var(--progress-color);
-  background-color: var(--progress-bg-color) !important;
-}
-
-@keyframes progressAnimationStrike {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-}
-
-.markdown-preview-view progress.mario-progress::-webkit-progress-value,
-.markdown-rendered progress.mario-progress::-webkit-progress-value,
-.markdown-source-view.is-live-preview
-  progress.mario-progress::-webkit-progress-value {
-  background-color: var(--progress-color) !important;
-  transition: 0.4s bicubic;
-  transition-property: width, background-color;
-  animation: progressAnimationStrike 6s;
-}
 
 /* .markdown-preview-view progress.mario-progress::before, .markdown-rendered progress.mario-progress::before, .markdown-source-view.is-live-preview progress::before {
     content: "ddd";
@@ -267,13 +231,6 @@ progress::-moz-progress-bar {
 
 .markdown-source-view.mod-cm6 .task-list-item-checkbox {
   border: 1px solid --var(--material-color-red-a700);
-}
-
-
-/* list items */
-
-.cm-hmd-list-indent {
-  font-family: var(--font-monospace) !important;
 }
 
 .daily-note-editor .embedded-backlinks {
