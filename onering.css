@@ -1168,6 +1168,28 @@ span[alt*=nlk].internal-embed.markdown-embed .markdown-preview-sizer.markdown-pr
   border: 1px solid blue;
 }
 
+/** Make bullet points more readable **/
+.HyperMD-list-line.cm-line:nth-child(even) {
+  color: var(--material-color-deep-purple-200);
+}
+
+input.task-list-item-checkbox[type=checkbox] {
+  border-color: var(--material-color-deep-purple-200);
+}
+
+/* provides a borderless tcg card like experience to the checked box making the checkedbox seem fuller and brighter. */
+input.task-list-item-checkbox[type=checkbox]:checked {
+  border-color: var(--checkbox-color);
+}
+
+.indexa {
+  counter-increment: idx;
+}
+.indexa:before {
+  font-size: smaller;
+  content: counter(idx, upper-roman);
+}
+
 .markdown-rendered tbody tr:nth-child(odd) {
   color: var(--material-color-deep-purple-200);
 }
