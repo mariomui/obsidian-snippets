@@ -1171,6 +1171,9 @@ span[alt*=nlk].internal-embed.markdown-embed .markdown-preview-sizer.markdown-pr
 .HyperMD-list-line.cm-line:nth-child(even) {
   color: var(--material-color-deep-purple-200);
 }
+.HyperMD-list-line.cm-line:nth-child(even) span.cm-hmd-internal-link {
+  color: #ffb74d;
+}
 
 .cm-hmd-list-indent {
   font-family: var(--font-monospace) !important;
