@@ -916,7 +916,7 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 .markdown-reading-view .markdown-preview-sizer.markdown-preview-section h1[data-heading] > a.tag .HyperMD-header.HyperMD-header-1.cm-line > span ~ span,
 .markdown-reading-view .markdown-preview-sizer.markdown-preview-section .cm-contentContainer .HyperMD-header.HyperMD-header-1.cm-line > span ~ span {
   border: unset;
-  padding: 0.05em 0.05em;
+  padding: 0.05em 0.05em 0 0.05em;
 }
 
 .markdown-source-view .cm-contentContainer .HyperMD-header.HyperMD-header-1 {
@@ -927,7 +927,7 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
   background-image: linear-gradient(to bottom, #ff5722, #b71c1c);
   border: 2px solid var(--material-color-brown-900);
   color: var(--material-color-brown-50);
-  padding: 0.2em 1em;
+  padding: 0.2em 1em 0 1em;
   border-radius: 0.5em 1.8em 0.3em 0.5em;
 }
 .markdown-source-view .cm-contentContainer .HyperMD-header.HyperMD-header-1.cm-line:has(> span.cm-hashtag) {
@@ -960,8 +960,7 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
   height: 0.9em;
   border: 1px solid #1565c0;
   margin-top: 0.2em;
-  margin-bottom: 0.5em;
-  padding: 0.1em;
+  padding: 0.1em 0.1em 0 0.1em;
   background-image: repeating-linear-gradient(-75deg, #0d47a1 0%, #800da1 4%, #670da1 8%, #1565c0 10%);
 }
 .HyperMD-header .cm-header-2:last-child:after {
@@ -970,14 +969,14 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
           clip-path: polygon(0 26%, 50% 55%, 100% 25%);
 }
 .HyperMD-header .cm-header-3:last-child:after {
-  width: 85%;
+  width: 87%;
   margin: 0 auto;
   background-image: repeating-linear-gradient(-75deg, #e64a19 0%, #e6194f 4%, #e61971 8%, #bf360c 10%);
   -webkit-clip-path: polygon(0 26%, 50% 90%, 100% 25%);
           clip-path: polygon(0 26%, 50% 90%, 100% 25%);
 }
 .HyperMD-header .cm-header-4:last-child:after {
-  width: 70%;
+  width: 74%;
   margin: 0 auto;
   background-image: repeating-linear-gradient(-75deg, #388e3c 0%, #5f8e38 4%, #6d8e38 8%, #1b5e20 10%);
   -webkit-clip-path: polygon(0 26%, 50% 130%, 100% 25%);
@@ -1006,11 +1005,17 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
   color: var(--accent);
 }
 
+.cm-contentContainer .HyperMD-header.HyperMD-header-2 {
+  margin: -0.5em 0 -0.75em 0 !important;
+}
 .cm-contentContainer .HyperMD-header.HyperMD-header-2.cm-line > *:last-child::before {
   content: ": ";
 }
 .cm-contentContainer .HyperMD-header.HyperMD-header-2.cm-line:has(.is-collapsed) > .cm-header.cm-header-2::before {
   content: ": ";
+}
+.cm-contentContainer .HyperMD-header.HyperMD-header-3 {
+  margin: -0.5em 0 -0.75em 0 !important;
 }
 .cm-contentContainer .HyperMD-header.HyperMD-header-3.cm-line > *:last-child::before {
   content: ":: ";
@@ -1018,11 +1023,17 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 .cm-contentContainer .HyperMD-header.HyperMD-header-3.cm-line:has(.is-collapsed) > .cm-header.cm-header-3::before {
   content: ":: ";
 }
+.cm-contentContainer .HyperMD-header.HyperMD-header-4 {
+  margin: -0.5em 0 -0.75em 0 !important;
+}
 .cm-contentContainer .HyperMD-header.HyperMD-header-4.cm-line > *:last-child::before {
   content: "::: ";
 }
 .cm-contentContainer .HyperMD-header.HyperMD-header-4.cm-line:has(.is-collapsed) > .cm-header.cm-header-4::before {
   content: "::: ";
+}
+.cm-contentContainer .HyperMD-header.HyperMD-header-5 {
+  margin: -0.5em 0 -0.75em 0 !important;
 }
 .cm-contentContainer .HyperMD-header.HyperMD-header-5.cm-line > *:last-child::before {
   content: ":::: ";
@@ -1053,7 +1064,7 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 
 :is(.canvas-wrapper, .markdown-source-view) .cm-preview-code-block.cm-embed-block.markdown-rendered .internal-query {
   border: 2px solid #ef6c00;
-  max-height: 30vmin;
+  max-height: 35vmin;
   overflow-y: scroll;
 }
 :is(.canvas-wrapper, .markdown-source-view) .embedded-backlinks .backlink-pane {
@@ -1206,6 +1217,10 @@ input.task-list-item-checkbox[type=checkbox]:checked {
   border-color: var(--checkbox-color);
 }
 
+.floating-toc-div.floating-left.hover:hover ul.floating-toc li.heading-list-item div.text-wrap a.text {
+  font-size: 2em !important;
+}
+
 .markdown-preview-view progress.mario-progress,
 .markdown-rendered progress.mario-progress,
 .markdown-source-view.is-live-preview progress.mario-progress {
@@ -1303,10 +1318,10 @@ input.task-list-item-checkbox[type=checkbox]:checked {
   display: none;
 }
 .internal-query .search-result-container .search-results-children .search-result .search-result-file-title {
-  font-size: larger;
+  font-size: 1rem;
 }
 .internal-query .search-result-container .search-results-children .search-result .search-result-file-matches {
-  font-size: medium;
+  font-size: 0.9rem;
 }
 .internal-query .search-result-container .search-results-children .tree-item.search-result:nth-child(2n+1) {
   background: #3e2723;
