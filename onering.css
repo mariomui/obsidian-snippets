@@ -916,7 +916,7 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 .markdown-reading-view .markdown-preview-sizer.markdown-preview-section h1[data-heading] > a.tag .HyperMD-header.HyperMD-header-1.cm-line > span ~ span,
 .markdown-reading-view .markdown-preview-sizer.markdown-preview-section .cm-contentContainer .HyperMD-header.HyperMD-header-1.cm-line > span ~ span {
   border: unset;
-  padding: 0.05em 0.05em 0 0.05em;
+  padding: 0.05em 0.05em 0.05em 0.05em;
 }
 
 .markdown-source-view .cm-contentContainer .HyperMD-header.HyperMD-header-1 {
@@ -951,15 +951,15 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
   color: var(--material-color-brown-50);
   /* padding: 0.2em 1em; */
   border-radius: 0.5em 1.8em 0.3em 0.5em;
-  border: 10px solid;
+  border: 1px solid white;
 }
 
 .HyperMD-header :is(.cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6):last-child:after {
   content: "";
   display: block;
   height: 0.9em;
-  border: 1px solid #1565c0;
-  margin-top: 0.2em;
+  outline: 1px solid #1565c0;
+  margin-top: 0.1em;
   padding: 0.1em 0.1em 0 0.1em;
   background-image: repeating-linear-gradient(-75deg, #0d47a1 0%, #800da1 4%, #670da1 8%, #1565c0 10%);
 }
@@ -1005,8 +1005,8 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
   color: var(--accent);
 }
 
-.cm-contentContainer .HyperMD-header.HyperMD-header-2 {
-  margin: -0.5em 0 -0.75em 0 !important;
+.cm-contentContainer .HyperMD-header.HyperMD-header-2 + .cm-line:not(.HyperMD-header) {
+  margin-top: -0.5em !important;
 }
 .cm-contentContainer .HyperMD-header.HyperMD-header-2.cm-line > *:last-child::before {
   content: ": ";
@@ -1014,8 +1014,8 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 .cm-contentContainer .HyperMD-header.HyperMD-header-2.cm-line:has(.is-collapsed) > .cm-header.cm-header-2::before {
   content: ": ";
 }
-.cm-contentContainer .HyperMD-header.HyperMD-header-3 {
-  margin: -0.5em 0 -0.75em 0 !important;
+.cm-contentContainer .HyperMD-header.HyperMD-header-3 + .cm-line:not(.HyperMD-header) {
+  margin-top: -0.5em !important;
 }
 .cm-contentContainer .HyperMD-header.HyperMD-header-3.cm-line > *:last-child::before {
   content: ":: ";
@@ -1023,8 +1023,8 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 .cm-contentContainer .HyperMD-header.HyperMD-header-3.cm-line:has(.is-collapsed) > .cm-header.cm-header-3::before {
   content: ":: ";
 }
-.cm-contentContainer .HyperMD-header.HyperMD-header-4 {
-  margin: -0.5em 0 -0.75em 0 !important;
+.cm-contentContainer .HyperMD-header.HyperMD-header-4 + .cm-line:not(.HyperMD-header) {
+  margin-top: -0.5em !important;
 }
 .cm-contentContainer .HyperMD-header.HyperMD-header-4.cm-line > *:last-child::before {
   content: "::: ";
@@ -1032,8 +1032,8 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 .cm-contentContainer .HyperMD-header.HyperMD-header-4.cm-line:has(.is-collapsed) > .cm-header.cm-header-4::before {
   content: "::: ";
 }
-.cm-contentContainer .HyperMD-header.HyperMD-header-5 {
-  margin: -0.5em 0 -0.75em 0 !important;
+.cm-contentContainer .HyperMD-header.HyperMD-header-5 + .cm-line:not(.HyperMD-header) {
+  margin-top: -0.5em !important;
 }
 .cm-contentContainer .HyperMD-header.HyperMD-header-5.cm-line > *:last-child::before {
   content: ":::: ";
