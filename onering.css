@@ -1167,25 +1167,22 @@ span[alt*=nlk].internal-embed.markdown-embed .markdown-preview-sizer.markdown-pr
 
 /* # API specific Feature To ONLY TAKE API BETWEEN = and --- */
 /* NAME: SELECTED-TRANSCLUSION-PREVIEW CSS SNIPPET */
-.popover.hover-popover .markdown-embed.is-loaded .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section div:has(> h1[data-heading="-"]) ~ div:not(:has(h1[data-heading="="])) {
+.markdown-embed .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section div:has(> h1[data-heading="-"]) ~ * {
   display: none;
 }
-.popover.hover-popover .markdown-embed.is-loaded .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section div:has(> h1[data-heading="="]) ~ div:not(:has(h1[data-heading^="---"])) {
+.markdown-embed .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section div:has(> h1[data-heading="="]) ~ * {
   display: initial;
 }
-.popover.hover-popover .markdown-embed.is-loaded .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section div:has(> h1[data-heading="-"]) {
+.markdown-embed .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section > div:has(> h1[data-heading="-"]) {
   display: none;
 }
-.popover.hover-popover .markdown-embed.is-loaded .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section div:has(> h1[data-heading^="---"]) ~ * > * {
-  display: none;
+.markdown-embed .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section div:has(> h1[data-heading^="---"]) {
+  visibility: hidden;
 }
-.popover.hover-popover .markdown-embed.is-loaded .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section div:has(> h1[data-heading^="---"]) {
-  display: none;
-}
-.popover.hover-popover .markdown-embed.is-loaded .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section ul.has-list-bullet li:nth-child(even) {
+.markdown-embed .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section ul.has-list-bullet li:nth-child(even) {
   color: var(--material-color-deep-purple-200);
 }
-.popover.hover-popover .markdown-embed.is-loaded .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section ul.has-list-bullet li:nth-child(even) > a {
+.markdown-embed .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section ul.has-list-bullet li:nth-child(even) > a {
   color: #f57c00;
 }
 
