@@ -601,20 +601,6 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
           clip-path: polygon(100% 0, 0 0%, 100% 100%);
 }
 
-.workspace-split:is(.mod-left-split, .mod-right-split) .view-content {
-  background-image: var(--mm-image);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.workspace.is-right-sidedock-open .workspace-split.mod-right-split .workspace-tabs.mod-top-right-space .workspace-tab-container .workspace-leaf .view-content > div:first-of-type {
-  background: rgba(0, 0, 0, 0.6);
-}
-.workspace.is-right-sidedock-open .workspace-split.mod-right-split .workspace-tabs .workspace-tab-container .workspace-leaf .workspace-leaf-content .view-content > :is(div:nth-of-type(2), div:nth-of-type(1)) {
-  background: rgba(0, 0, 0, 0.8);
-}
-
 .view-action[aria-label^="Current view: editing"] {
   display: none;
 }
@@ -1134,6 +1120,33 @@ span[alt*=nlk].internal-embed.markdown-embed .markdown-preview-sizer.markdown-pr
   border-radius: 0 0.2em 0 0;
 }
 
+.internal-query .search-result-container {
+  background-image: var(--mm-image);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-blend-mode: overlay;
+}
+
+.workspace-split:is(.mod-left-split, .mod-right-split) .view-content {
+  background-image: var(--mm-image);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.workspace.is-right-sidedock-open .workspace-split.mod-right-split.mod-horizontal {
+  border-left: 0.1em solid #3e2723 !important;
+}
+
+.workspace.is-right-sidedock-open .workspace-split.mod-right-split .workspace-tabs.mod-top-right-space .workspace-tab-container .workspace-leaf .view-content > div:first-of-type {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.workspace.is-right-sidedock-open .workspace-split.mod-right-split .workspace-tabs .workspace-tab-container .workspace-leaf .workspace-leaf-content .view-content > :is(div:nth-of-type(2), div:nth-of-type(1)) {
+  background: rgba(0, 0, 0, 0.8);
+}
+
 .workspace.is-right-sidedock-open .workspace-split.mod-right-split .workspace-tabs .workspace-tab-container .workspace-leaf .view-content > div:first-of-type {
   padding: 0.1em 0.5em;
 }
@@ -1149,10 +1162,38 @@ span[alt*=nlk].internal-embed.markdown-embed .markdown-preview-sizer.markdown-pr
   background-blend-mode: overlay;
 }
 
-.markdown-preview-view .cm-contentContainer .cm-embed-block.markdown-rendered tbody > tr > td:nth-child(even),
-.markdown-preview-view .cm-contentContainer .cm-embed-block.markdown-rendered tbody > tr > td:nth-child(even) a,
-.markdown-source-view .cm-contentContainer .cm-embed-block.markdown-rendered tbody > tr > td:nth-child(even),
-.markdown-source-view .cm-contentContainer .cm-embed-block.markdown-rendered tbody > tr > td:nth-child(even) a {
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle {
+  border-color: #f57c00 !important;
+}
+
+.internal-query .search-result-container {
+  background-image: var(--mm-image);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-blend-mode: overlay;
+}
+
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle {
+  border-color: #f57c00 !important;
+}
+
+.internal-query .search-result-container {
+  background-image: var(--mm-image);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-blend-mode: overlay;
+}
+
+.markdown-preview-view .cm-contentContainer .cm-embed-block.markdown-rendered .table-view-table tbody > tr > td:nth-child(even),
+.markdown-preview-view .cm-contentContainer .cm-embed-block.markdown-rendered .table-view-table tbody > tr > td:nth-child(even) a,
+.markdown-source-view .cm-contentContainer .cm-embed-block.markdown-rendered .table-view-table tbody > tr > td:nth-child(even),
+.markdown-source-view .cm-contentContainer .cm-embed-block.markdown-rendered .table-view-table tbody > tr > td:nth-child(even) a {
+  color: #f57c00;
+}
+.markdown-preview-view .cm-contentContainer .cm-embed-block.markdown-rendered .table-view-table tbody > tr:nth-child(odd) td a.internal-link,
+.markdown-source-view .cm-contentContainer .cm-embed-block.markdown-rendered .table-view-table tbody > tr:nth-child(odd) td a.internal-link {
   color: #f57c00;
 }
 .markdown-preview-view .cm-contentContainer .cm-embed-block.cm-table-widget div.markdown-rendered:has(table),
@@ -1366,4 +1407,7 @@ cite {
   padding-right: 10px;
   text-align: right;
   display: block;
+}
+cite a:link {
+  color: white;
 }
