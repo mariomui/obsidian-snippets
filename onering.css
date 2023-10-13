@@ -1149,11 +1149,19 @@ span[alt*=nlk].internal-embed.markdown-embed .markdown-preview-sizer.markdown-pr
   background-blend-mode: overlay;
 }
 
-.markdown-preview-view .cm-contentContainer.cm-contentContainer .cm-embed-block.cm-table-widget div.markdown-rendered:has(table), .markdown-source-view .cm-contentContainer.cm-contentContainer .cm-embed-block.cm-table-widget div.markdown-rendered:has(table) {
+.markdown-preview-view .cm-contentContainer .cm-embed-block.markdown-rendered tbody > tr > td:nth-child(even),
+.markdown-preview-view .cm-contentContainer .cm-embed-block.markdown-rendered tbody > tr > td:nth-child(even) a,
+.markdown-source-view .cm-contentContainer .cm-embed-block.markdown-rendered tbody > tr > td:nth-child(even),
+.markdown-source-view .cm-contentContainer .cm-embed-block.markdown-rendered tbody > tr > td:nth-child(even) a {
+  color: #f57c00;
+}
+.markdown-preview-view .cm-contentContainer .cm-embed-block.cm-table-widget div.markdown-rendered:has(table),
+.markdown-source-view .cm-contentContainer .cm-embed-block.cm-table-widget div.markdown-rendered:has(table) {
   padding: 0.4em 0.4em;
   border: 1px solid #7b1fa2;
 }
-.markdown-preview-view .cm-contentContainer.cm-contentContainer > .cm-content table, .markdown-source-view .cm-contentContainer.cm-contentContainer > .cm-content table {
+.markdown-preview-view .cm-contentContainer > .cm-content table,
+.markdown-source-view .cm-contentContainer > .cm-content table {
   background: transparent;
 }
 
