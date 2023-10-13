@@ -1176,6 +1176,9 @@ span[alt*=nlk].internal-embed.markdown-embed .markdown-preview-sizer.markdown-pr
 .popover.hover-popover .markdown-embed .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section > div:has(> h1[data-heading="-"]) {
   display: none;
 }
+.popover.hover-popover .markdown-embed .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section div:has(> h1[data-heading^="---"]) ~ div {
+  display: none;
+}
 .popover.hover-popover .markdown-embed .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section div:has(> h1[data-heading^="---"]) {
   visibility: hidden;
 }
