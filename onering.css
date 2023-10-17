@@ -6,10 +6,18 @@
   background-blend-mode: overlay;
 }
 
+.internal-query .search-result-container {
+  background-image: var(--mm-image);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-blend-mode: overlay;
+}
+
 :root {
   --accent: #37cdbe;
   --primary: #570df8;
-  --secondary: var(--material-color-purple-a100);
+  --secondary: shared.$primaryAlt;
   --neutral: #3d4451;
   --base-100: #ffffff;
   --info: #3abff8;
@@ -22,9 +30,9 @@
   --progress-bg-color: var(--primary);
   /* # RANDOM GLOBALS */
   /* ## Translucency Helpers */
-  --blurbrightness: .28;
+  --blurbrightness: 0.28;
   --blur: 7px;
-  --shade: rgba(0,0,0,.8);
+  --shade: rgba(0, 0, 0, 0.8);
   /* ## I HATE NAMING */
   --topbar-blend: hard-light;
 }
@@ -368,6 +376,14 @@
   --nbc: var(--tertiary-blue-800);
 }
 
+.internal-query .search-result-container {
+  background-image: var(--mm-image);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-blend-mode: overlay;
+}
+
 /*
 A-source: https://forum.obsidian.md/t/adding-color-to-obsidian-a-rainbow-of-possibility/12805/11
 B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main/02%20-%20Community%20Expansions/02.05%20All%20Community%20Expansions/CSS%20Snippets/Files%20explorer%20relations%20%26%20color%20%28Mara-Li%29.md
@@ -417,7 +433,6 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 }
 .nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title[data-path^=_] {
   /* apply style to any child of a _ prefixed virtual file */
-  border-bottom: 1px solid var(--secondary);
   display: none;
 }
 .nav-folder.mod-root > .nav-folder-children > .nav-folder.is-collapsed > .nav-folder-title {
