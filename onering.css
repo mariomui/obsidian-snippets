@@ -1432,7 +1432,7 @@ input.task-list-item-checkbox[type=checkbox]:checked {
 }
 
 .markdown-source-view .cm-contentContainer .HyperMD-list-line.HyperMD-list-line-1.cm-line span.cm-header.cm-header-3.cm-list-1 {
-  color: #fff176 !important;
+  color: #ff0 !important;
 }
 
 .markdown-embed-content .block-language-dataviewjs button {
