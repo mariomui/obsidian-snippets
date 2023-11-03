@@ -973,7 +973,11 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
   border: 1px solid white;
 }
 
-.HyperMD-header :is(.cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6):last-child:after {
+.HyperMD-header :is(.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6):last-child:after {
   content: "";
   display: block;
   height: 0.9em;
@@ -1001,8 +1005,22 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
   -webkit-clip-path: polygon(0 26%, 50% 130%, 100% 25%);
           clip-path: polygon(0 26%, 50% 130%, 100% 25%);
 }
+.HyperMD-header .cm-header-5:last-child:after {
+  width: 74%;
+  margin: 0 auto;
+  background-image: repeating-linear-gradient(-75deg, #1976d2 0%, #19d2d2 4%, #19d2b3 8%, #0d47a1 10%);
+  -webkit-clip-path: polygon(0 26%, 50% 130%, 100% 25%);
+          clip-path: polygon(0 26%, 50% 130%, 100% 25%);
+}
+.HyperMD-header .cm-header-6:last-child:after {
+  width: 74%;
+  margin: 0 auto;
+  background-image: repeating-linear-gradient(-75deg, #303f9f 0%, #30779f 4%, #30899f 8%, #1a237e 10%);
+  -webkit-clip-path: polygon(0 26%, 50% 130%, 100% 25%);
+          clip-path: polygon(0 26%, 50% 130%, 100% 25%);
+}
 
-/* # H1 styling */
+/* # H1 styling SPECIAL */
 .markdown-source-view .markdown-embed-content .markdown-preview-sizer.markdown-preview-section h1[data-heading="="] {
   background: var(--material-color-deep-orange-900);
   outline: 2px solid var(--material-color-brown-700);
@@ -1018,7 +1036,7 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
   border-radius: 0.5em 1.8em 0.3em 0.5em;
 }
 
-.cm-contentContainer .HyperMD-header.HyperMD-header-5.cm-line:has(.is-collapsed) > .cm-header.cm-header-5::before, .cm-contentContainer .HyperMD-header.HyperMD-header-5.cm-line > *:last-child::before, .cm-contentContainer .HyperMD-header.HyperMD-header-4.cm-line:has(.is-collapsed) > .cm-header.cm-header-4::before, .cm-contentContainer .HyperMD-header.HyperMD-header-4.cm-line > *:last-child::before, .cm-contentContainer .HyperMD-header.HyperMD-header-3.cm-line:has(.is-collapsed) > .cm-header.cm-header-3::before, .cm-contentContainer .HyperMD-header.HyperMD-header-3.cm-line > *:last-child::before, .cm-contentContainer .HyperMD-header.HyperMD-header-2.cm-line:has(.is-collapsed) > .cm-header.cm-header-2::before, .cm-contentContainer .HyperMD-header.HyperMD-header-2.cm-line > *:last-child::before {
+.cm-contentContainer .HyperMD-header.HyperMD-header-6.cm-line:has(.is-collapsed) > .cm-header.cm-header-6::before, .cm-contentContainer .HyperMD-header.HyperMD-header-6.cm-line > *:last-child::before, .cm-contentContainer .HyperMD-header.HyperMD-header-5.cm-line:has(.is-collapsed) > .cm-header.cm-header-5::before, .cm-contentContainer .HyperMD-header.HyperMD-header-5.cm-line > *:last-child::before, .cm-contentContainer .HyperMD-header.HyperMD-header-4.cm-line:has(.is-collapsed) > .cm-header.cm-header-4::before, .cm-contentContainer .HyperMD-header.HyperMD-header-4.cm-line > *:last-child::before, .cm-contentContainer .HyperMD-header.HyperMD-header-3.cm-line:has(.is-collapsed) > .cm-header.cm-header-3::before, .cm-contentContainer .HyperMD-header.HyperMD-header-3.cm-line > *:last-child::before, .cm-contentContainer .HyperMD-header.HyperMD-header-2.cm-line:has(.is-collapsed) > .cm-header.cm-header-2::before, .cm-contentContainer .HyperMD-header.HyperMD-header-2.cm-line > *:last-child::before {
   position: relative;
   left: -0.05em;
   color: var(--accent);
@@ -1059,6 +1077,15 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 }
 .cm-contentContainer .HyperMD-header.HyperMD-header-5.cm-line:has(.is-collapsed) > .cm-header.cm-header-5::before {
   content: ":::: ";
+}
+.cm-contentContainer .HyperMD-header.HyperMD-header-6 + .cm-line:not(.HyperMD-header) {
+  margin-top: -0.5em !important;
+}
+.cm-contentContainer .HyperMD-header.HyperMD-header-6.cm-line > *:last-child::before {
+  content: "::::: ";
+}
+.cm-contentContainer .HyperMD-header.HyperMD-header-6.cm-line:has(.is-collapsed) > .cm-header.cm-header-6::before {
+  content: "::::: ";
 }
 
 .internal-query .search-result-container {
