@@ -1950,8 +1950,62 @@ span[alt*=nlk].internal-embed.markdown-embed .markdown-preview-sizer.markdown-pr
   padding: 0;
 }
 
-.popover.hover-popover .markdown-embed-content .markdown-preview-sizer.markdown-preview-section .markdown-rendered h2 {
-  border: 1px solid blue;
+.popover.hover-popover > .markdown-embed > .markdown-emebed-content > .markdown-preview-view > .markdown-preview-section {
+  background: blue;
+}
+
+.popover.hover-popover {
+  background-color: #112;
+}
+.popover.hover-popover .markdown-embed-content .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section h2 {
+  background: #4a148c;
+  padding: 0.5em 0.2em;
+}
+.popover.hover-popover .markdown-embed-content .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section h2:before {
+  content: ": ";
+  position: relative;
+  left: -0.05em;
+  color: var(--accent);
+}
+.popover.hover-popover .markdown-embed-content .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section h3 {
+  background: #4a148c;
+  padding: 0.5em 0.2em;
+}
+.popover.hover-popover .markdown-embed-content .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section h3:before {
+  content: ":: ";
+  position: relative;
+  left: -0.05em;
+  color: var(--accent);
+}
+.popover.hover-popover .markdown-embed-content .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section h4 {
+  background: #4a148c;
+  padding: 0.5em 0.2em;
+}
+.popover.hover-popover .markdown-embed-content .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section h4:before {
+  content: "::: ";
+  position: relative;
+  left: -0.05em;
+  color: var(--accent);
+}
+.popover.hover-popover .markdown-embed-content .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section h5 {
+  background: #4a148c;
+  padding: 0.5em 0.2em;
+}
+.popover.hover-popover .markdown-embed-content .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section h5:before {
+  content: ":::: ";
+  position: relative;
+  left: -0.05em;
+  color: var(--accent);
+}
+.popover.hover-popover .markdown-embed-content .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section h6 {
+  background: #4a148c;
+  padding: 0.5em 0.2em;
+}
+.popover.hover-popover .markdown-embed-content .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section h6:before {
+  content: "::::: ";
+  position: relative;
+  left: -0.05em;
+  color: var(--accent);
 }
 
 .HyperMD-list-line.cm-line:nth-child(even) {
