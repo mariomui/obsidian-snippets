@@ -2314,7 +2314,7 @@ body:not(.metadata-heading-on) .metadata-properties-heading {
 }
 
 .markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer > .metadata-container {
-  width: 75%;
+  width: clamp(800px, 75%, 50%);
   border-radius: 15px 15px 0 0;
 }
 .markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer > .metadata-container .metadata-properties-heading .collapse-indicator.collapse-icon {
@@ -2324,6 +2324,11 @@ body:not(.metadata-heading-on) .metadata-properties-heading {
   left: -2.2em;
   top: 50%;
   transform: translateY(-50%);
+}
+.markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer > .metadata-container .metadata-properties-heading .collapse-indicator.collapse-icon .metadata-properties {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 11vh;
 }
 
 .markdown-rendered tbody tr:nth-child(odd) {
