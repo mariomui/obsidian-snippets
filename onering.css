@@ -2342,7 +2342,7 @@ body:not(.metadata-heading-on) .metadata-properties-heading {
 }
 
 /* # Source and reading view for title/file name on content top */
-.markdown-source-view.mod-cm6.is-readable-line-width .metadata-content, .markdown-source-view.mod-cm6.is-readable-line-width .inline-title {
+.block-language-dataviewjs .timer .timer-display .control h2.timer-text, .markdown-source-view.mod-cm6.is-readable-line-width .metadata-content, .markdown-source-view.mod-cm6.is-readable-line-width .inline-title {
   color: white;
   text-shadow: 1px 4px 3px rgb(233, 117, 71);
   background: rgba(0, 0, 0, 0.6);
@@ -2351,7 +2351,7 @@ body:not(.metadata-heading-on) .metadata-properties-heading {
   margin-bottom: 0;
 }
 
-.markdown-reading-view, .markdown-source-view.mod-cm6.is-readable-line-width {
+.block-language-dataviewjs .replaceme .view-content, .markdown-reading-view, .markdown-source-view.mod-cm6.is-readable-line-width {
   background-image: url("https://i.redd.it/ew1f1ae4g83c1.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -2437,14 +2437,51 @@ span.cm-strong {
   text-shadow: 2px 4px 4px #555;
 }
 
+.container:has(.timer) {
+  justify-content: center;
+}
+.container:has(.timer) .pomodoro-extra {
+  max-height: 2vh;
+}
+
 .timer svg.timer {
   display: none;
 }
 
-.timer .mode {
-  font-size: clamp(1rem, 20vw, 5rem);
+div[data-type=timer-view] .timer {
+  width: 100%;
+  height: 100%;
+}
+div[data-type=timer-view] .timer .timer-display {
+  padding: unset;
+}
+div[data-type=timer-view] .timer .timer-display .status .mode {
+  font-size: clamp(1em, 14vw, 5em);
   text-decoration: underline;
 }
-.timer .timer-text {
-  font-size: clamp(1rem, 4vw, 12rem);
+div[data-type=timer-view] .timer .timer-display .control h2.timer-text {
+  font-size: clamp(1em, 4vw, 19rem) !important;
+}
+
+.block-language-dataviewjs .replaceme .view-content {
+  background-image: url("https://i.redd.it/ew1f1ae4g83c1.png") !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% 100% !important;
+}
+.block-language-dataviewjs .timer {
+  width: 100%;
+  height: 100%;
+}
+.block-language-dataviewjs .timer .timer-display {
+  height: 100%;
+}
+.block-language-dataviewjs .timer .timer-display .status .mode {
+  font-size: 3em;
+}
+.block-language-dataviewjs .timer .timer-display .control h2.timer-text {
+  padding: 0.1em 0.2em;
+  border-radius: 0.2em 0.2em;
+  margin: 0 auto;
+  font-size: 5em;
 }
