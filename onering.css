@@ -2331,6 +2331,19 @@ body:not(.metadata-heading-on) .metadata-properties-heading {
   max-height: 11vh;
 }
 
+.workspace-tabs .workspace-leaf-content .view-content .empty-state {
+  background-image: var(--bg-image);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.workspace-tabs .workspace-leaf-content .view-content .empty-state .empty-state-container {
+  background: var(--shade);
+  border-radius: 1em 1em;
+  padding: 1em 0.5em;
+}
+
 .markdown-rendered tbody tr:nth-child(odd) {
   color: #b39ddb;
 }
@@ -2449,8 +2462,8 @@ span.cm-strong {
 }
 
 div[data-type=timer-view] .timer {
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  aspect-ratio: 4/3;
 }
 div[data-type=timer-view] .timer .timer-display {
   padding: unset;
@@ -2460,7 +2473,7 @@ div[data-type=timer-view] .timer .timer-display .status .mode {
   text-decoration: underline;
 }
 div[data-type=timer-view] .timer .timer-display .control h2.timer-text {
-  font-size: clamp(1em, 4vw, 19rem) !important;
+  font-size: clamp(1em, 3.5vw, 19rem) !important;
 }
 
 .block-language-dataviewjs .replaceme .view-content {
