@@ -1888,6 +1888,15 @@ span[alt*=nlk].internal-embed.markdown-embed .markdown-preview-sizer.markdown-pr
   color: var(--accent);
 }
 
+.popover.hover-popover .markdown-embed.is-loaded .markdown-embed-content .markdown-preview-view pre > code {
+  white-space: pre-wrap;
+}
+.popover.hover-popover .markdown-embed.is-loaded .markdown-embed-content .markdown-preview-view pre > code .ec-line span.indent {
+  display: inline-block;
+  max-width: 2rem;
+  margin: 0;
+}
+
 .HyperMD-list-line.cm-line:nth-child(even) {
   color: var(--material-color-deep-purple-200);
 }
