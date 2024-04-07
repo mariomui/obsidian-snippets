@@ -2078,6 +2078,10 @@ input.task-list-item-checkbox[type=checkbox]:checked {
   color: unset;
 }
 
+.BC-Matrix.markdown-preview-view .BC-matrix-hier .internal-link.BC-Link.is-unresolved {
+  color: #C6BAAD;
+}
+
 .markdown-preview-view progress.mario-progress,
 .markdown-rendered progress.mario-progress,
 .markdown-source-view.is-live-preview progress.mario-progress {
