@@ -11,70 +11,10 @@
   padding-bottom: 10px;
 }
 
-.markdown-preview-view.markdown-rendered.node-insert-event.show-indentation-guide
-  .markdown-preview-sizer.markdown-preview-section {
-  padding-left: 2rem;
-}
-/* Remove scroll on embeds. */
-.markdown-source-view 
-.internal-embed.markdown-embed.is-loaded[alt*="ui-noscroll"] 
-.markdown-embed-content 
-.markdown-preview-view.markdown-rendered.node-insert-event.show-indentation-guide
-  .markdown-preview-sizer.markdown-preview-section {
-    overflow: hidden;
-}
-
-/* .markdown-preview-view blockquote {
-  position: relative;
-}
-
-.markdown-preview-view blockquote:after {
-  content: "\201C";
-  position: absolute;
-  top: 0.3em;
-  left: -0.45em;
-  font-size: 6em;
-  color: #d9d4f0;
-} */
-
-/* if paraphrasing, wrap your quote in (i want to deprecate this)
- <blockquote class=paraphrase>text</blockquote> 
-*/
 
 .markdown-preview-view blockquote.paraphrase:after {
   display: none;
 }
-
-/* for citations */
-
-/* cite {
-  background-color: var(--book-source);
-  color: white;
-  margin-left: -10px;
-  margin-right: -10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: right;
-  display: block;
-}
-
-cite a:link {
-  color: white;
-} */
-
-/** # customizing paraphrasing by using nested block quotes **/
-
-/* 💀 */
-
-/* preview mode print? */
-/* .markdown-preview-view blockquote blockquote:after {
-  content: '\1FA82';
-  position: absolute;
-  top: 0.3em;
-  left: -0.45em;
-  font-size: 3em;
-  color: #d9d4f0;
-} */
 
 .workspace-leaf-content
   .floating-toc-div.floating-left
@@ -82,7 +22,6 @@ cite a:link {
   .markdown-preview-view {
   padding-left: 0.1em;
 }
-
 
 
 /*** preview mode end****/
@@ -98,177 +37,12 @@ cite a:link {
   justify-content: center;
 }
 
-/* # Cornell */
-.internal-embed[alt*="ui-cornell"].markdown-embed.inline-embed.is-loaded {
-  transform:translate(-110%,-65%);
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  max-height: 10rem;
-  overflow-y:scroll;
-  margin-bottom: -9rem !important;
-}
-.internal-embed[alt*="ui-cornell"].markdown-embed.inline-embed.is-loaded 
-.markdown-embed-content {
-  width: 18em;
-  filter: hue-rotate(90deg);
-}
-.internal-embed[alt*="ui-cornell"].markdown-embed.inline-embed.is-loaded 
-.markdown-embed-content .markdown-preview-view.markdown-rendered .markdown-preview-sizer {
-  min-height: 0px !important;
-}
-
-
-/* ## Cornell Callout */
-
-.markdown-source-view.mod-cm6 
-.cm-contentContainer {
-  container-type: inline-size;
-}
-:root {
-  --ui-cornell-width: 20vw;
-}
-
-
-.markdown-reading-view
-.callout[data-callout="ui-cornell"] {
-  --callout-color: 222,222,222;
-  background: var(--material-color-brown-900)
-}
-
-.markdown-source-view.mod-cm6 
-.cm-embed-block.cm-callout:has(>
-.markdown-rendered
-.callout[data-callout="ui-cornell"]) 
-div.markdown-embed-content 
-.block-language-dataviewjs p {
-  overflow-y: scroll;
-  /* max-width: 90%; */
-
-  /* max-width: var(--ui-cornell-width) */
-}
-.markdown-reading-view.mod-cm6 
-.cm-embed-block.cm-callout:has(>
-.markdown-rendered
-.callout[data-callout="ui-cornell"]) 
-div.markdown-embed-content 
-.block-language-dataviewjs p {
-  overflow-y: scroll;
-  /* max-width: 90%; */
-  /* max-width: var(--ui-cornell-width) */
-}
-
-.markdown-reading-view
-.callout[data-callout="ui-cornell"]
-.markdown-embed-content
-.markdown-rendered
-.markdown-preview-sizer.markdown-preview-section {
-  margin: 0 !important;
-}
-/* .markdown-reading-view
-.callout[data-callout="ui-cornell"]
-.markdown-embed-content
-.markdown-rendered
-.markdown-preview-sizer.markdown-preview-section 
-.block-language-dataviewjs p{
-  /* width: auto !important;
-} 
-*/
-
-/*  on any width greater than normal CORNELL SIDE the callout*/
-@container (min-width : 90cqw) {
-  .markdown-source-view.mod-cm6 
-  .cm-embed-block.cm-callout:has( > .markdown-rendered .callout[data-callout="ui-cornell"]):not(:hover) {
-    --callout-color: 222,222,222;
-    background: var(--material-color-brown-900);
-    filter: blur(5px);
-    
-  }
-
-
-  .markdown-source-view.mod-cm6 
-  .cm-embed-block.cm-callout:has(>
-  .markdown-rendered
-  .callout[data-callout="ui-cornell"]) {
-    
-    transform:translate(-200%,75%);
-    display: flex !important;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    max-height: 10vw;
-    overflow-y: scroll;
-    max-width: 20ch !important;
-
-    /* width: calc(var(--ui-cornell-width) + 3vw); */
-    margin-bottom: -2cqw !important;
-  }
-  /* .markdown-source-view.mod-cm6 
-  .cm-embed-block.cm-callout:has(>
-  .markdown-rendered
-  .callout[data-callout="ui-cornell"]) + .cm-line:before {
-    content: "Cornell box above";
-    display: block;
-    background: var(--tertiary-blue-800) !important;
-    width: 100%;
-    padding: .5em .5em;
-    border-radius: 0em 0 1em 1em;
-  } */
-  /* .markdown-source-view.mod-cm6 
-  .cm-embed-block.cm-callout:has(>
-  .markdown-rendered
-  .callout[data-callout="ui-cornell"]):before {
-    content: "Click Me To Edit";
-    display: block;
-    background: var(--tertiary-blue-800);
-    width: 100%;
-    padding: .5em .5em;
-    border-radius: 1em 1em 0em 0em;
-  }
-  .markdown-source-view.mod-cm6 
-  .cm-embed-block.cm-callout:has(>
-  .markdown-rendered
-  .callout[data-callout="ui-cornell"]):after {
-    content: "Click Me To Edit";
-    display: block;
-    background: var(--tertiary-blue-800);
-    width: 100%;
-    padding: .5em .5em;
-    border-radius: 0em 0 1em 1em;
-  } */
-
-  .markdown-source-view.mod-cm6 
-  .cm-embed-block.cm-callout:has(
-    > .markdown-rendered
-    .callout[data-callout="ui-cornell"]) div.markdown-embed-content .block-language-dataviewjs p {
-    overflow-y: scroll;
-    /* max-width: var(--ui-cornell-width); */
-    height: fit-content;
-  }
-}
-
-/* data view container in reading view */
-/* .markdown-reading-view .markdown-preview-view.markdown-rendered .markdown-preview-sizer 
-div.block-language-dataview 
-.dataview.dataview-container {
-
-
-  background-image: var(--mm-image), var(--anu-image);
-  background-attachment: fixed;
-  background-blend-mode: multiply;
-} */
-/* Source view content container brightness */
 .markdown-source-view .cm-contentContainer {
   border-radius: 1.5em 1.5em;
   /* level 2 */
   background: var(--shade);
   min-height: 50vh;
   margin: 0 1em;
-}
-.markdown-source-view .block-language-dataview,
-.markdown-reading-view .block-language-dataview {
-  border: 2px solid var(--material-color-deep-orange);
-  border-radius: 1em 1em;
-  background: var(--shade);
 }
 
 
@@ -316,20 +90,13 @@ div.block-language-dataview
 }
 
 
-/* Reading view content container */
-.markdown-reading-view .markdown-preview-sizer.markdown-preview-section {
-  /* level 2 */
-  margin: 0 2em;
-  border-radius: 1.5em 1.5em;
-  background: var(--shade);
-}
+
 
 /* # H1 styling */
 /* .markdown-preview-sizer.markdown-preview-section h1[data-heading="-"] {
   background: var(--material-color-deep-orange-900) !important;
 }*/
 .markdown-source-view .markdown-embed-content .markdown-preview-sizer.markdown-preview-section h1[data-heading="="] {
-  background: var(--material-color-deep-orange-900);
   outline: 2px solid var(--material-color-brown-700);
   padding: 0.1em 2em;
   color: var(--tertiary-blue-800);
@@ -338,28 +105,11 @@ div.block-language-dataview
 
 /* note background blue glass color */
 .markdown-preview-sizer.markdown-preview-section h1[data-heading^="---"] {
-  background: var(--material-color-red-900);
   border: 2px dashed var(--material-color-brown-700);
   padding: 0.2em 3em;
   border-radius: 0.5em 1.8em 0.3em 0.5em;
 }
 
-/* little dots */
-/* .HyperMD-header.HyperMD-header-1.cm-line {
-  background: var(--material-color-brown-900);
-  border: 2px solid var(--material-color-red-700);
-  color: var(--material-color-blue-grey-300);
-  padding: 0.2em 0.1em;
-  border-radius: 0.5em 1.8em 0.3em 0.5em;
-} */
-
-/* .HyperMD-header.HyperMD-header-1.cm-line:has(.is-collapsed)
-  > .cm-header.cm-header-1::before {
-  content: "";
-  position: relative;
-  left: -0.05em;
-  color: var(--accent);
-} */
 
 .is-flashing {
   color: var(--warning);

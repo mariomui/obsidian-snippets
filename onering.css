@@ -1061,10 +1061,13 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 /* ## H1 reading view */
 .markdown-reading-view .markdown-preview-sizer.markdown-preview-section h1[data-heading] {
   background-image: linear-gradient(to bottom, #ff5722, #b71c1c);
-  border: 2px solid var(--material-color-brown-900);
+  border: 2px solid #3e2723;
   color: var(--material-color-brown-50);
   padding: 0.2em 1em;
   border-radius: 0.5em 1.8em 0.3em 0.5em;
+}
+.markdown-reading-view .markdown-preview-sizer.markdown-preview-section h1[data-heading]:not(:only-child) {
+  background: #1565c0;
 }
 .markdown-reading-view .markdown-preview-sizer.markdown-preview-section h1[data-heading] > a.tag .HyperMD-header.HyperMD-header-1.cm-line > span ~ span,
 .markdown-reading-view .markdown-preview-sizer.markdown-preview-section .cm-contentContainer .HyperMD-header.HyperMD-header-1.cm-line > span ~ span {
@@ -1288,6 +1291,25 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
   padding-left: 0.1em;
 }
 
+.markdown-source-view .block-language-dataview, .markdown-reading-view .block-language-dataview {
+  border: 2px solid var(--material-color-deep-orange);
+  border-radius: 1em 1em;
+  background: var(--shade);
+}
+
+.markdown-reading-view .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section .block-language-dataviewjs {
+  padding: 0.5em 1em;
+}
+.markdown-reading-view .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section > div:last-child {
+  max-width: 90%;
+}
+
+.markdown-source-view {
+  /* Remove scroll on embeds. */
+}
+.markdown-source-view .internal-embed.markdown-embed.is-loaded[alt*=ui-noscroll] .markdown-embed-content .markdown-preview-view.markdown-rendered.node-insert-event.show-indentation-guide .markdown-preview-sizer.markdown-preview-section {
+  overflow: hidden;
+}
 .markdown-source-view .markdown-embed-content .markdown-preview-view.markdown-rendered .block-language-dataviewjs li:has(span.internal-embed[alt*="=$"]) ~ li:nth-child(2n+2) {
   border-top: 0.1em solid #ff5722;
   background-color: #1b5e20;
@@ -1358,6 +1380,43 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 span[alt*=nlk].internal-embed.markdown-embed {
   padding: 0;
 }
+span[alt*=nlk].internal-embed.markdown-embed .markdown-preview-sizer.markdown-preview-section {
+  padding-left: 0 !important;
+}
+
+.markdown-reading-view .internal-embed[alt*=nlk].markdown-embed .markdown-preview-sizer.markdown-preview-section {
+  padding: 0 0 0 0 !important;
+  padding-left: 0px !important;
+  margin: 0;
+}
+.markdown-reading-view .markdown-preview-sizer.markdown-preview-section {
+  /* level 2 */
+  border-radius: 1.5em 1.5em;
+  background: var(--shade);
+}
+
+/** : Tranclusion/Embed sections */
+.internal-embed[alt*=nlk].markdown-embed {
+  /* hide file name on transcludes */
+}
+
+.internal-embed[alt*=nlk].markdown-embed .embed-title.markdown-embed-title {
+  display: none;
+}
+
+.internal-embed[alt*=nlk].markdown-embed .markdown-preview-sizer.markdown-preview-section {
+  padding: 0.1em 0 0 0 !important;
+  padding-left: 5px !important;
+}
+
+.internal-embed[alt*=nlk].markdown-embed .markdown-preview-sizer > div:nth-of-type(3) {
+  display: none;
+}
+
+span[alt*=nlk].internal-embed.markdown-embed {
+  padding: 0;
+}
+
 span[alt*=nlk].internal-embed.markdown-embed .markdown-preview-sizer.markdown-preview-section {
   padding-left: 0 !important;
 }
@@ -1919,6 +1978,10 @@ input.task-list-item-checkbox[type=checkbox]:checked {
 
 .floating-toc-div.floating-left.hover:hover ul.floating-toc li.heading-list-item div.text-wrap a.text {
   font-size: 2em !important;
+}
+
+.workspace-leaf-content .floating-toc-div.floating-left ~ .markdown-reading-view .markdown-preview-view {
+  padding-left: 0.1em;
 }
 
 /* Font for the markdown source (edit) view */
