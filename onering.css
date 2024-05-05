@@ -1985,6 +1985,10 @@ input.task-list-item-checkbox[type=checkbox]:checked {
 }
 
 /* Font for the markdown source (edit) view */
+.longform-leaf {
+  /* Font for the markdown preview view */
+}
+
 .longform-leaf .cm-s-obsidian {
   /* font-family: Atkinson Hyperlegible; */
   /* font-size: 1.1em; */
@@ -2024,7 +2028,6 @@ input.task-list-item-checkbox[type=checkbox]:checked {
   font-weight: normal;
 }
 
-/* Font for the markdown preview view */
 .longform-leaf .markdown-preview-view {
   font-family: Garamond;
   font-size: 1.2em;
@@ -2077,7 +2080,7 @@ input.task-list-item-checkbox[type=checkbox]:checked {
 }
 
 .longform-leaf {
-  --background-primary: antiquewhite;
+  background: antiquewhite;
   --background-primary-alt: white;
   /* --background-secondary: white; */
   /* --background-secondary-alt: white; */
