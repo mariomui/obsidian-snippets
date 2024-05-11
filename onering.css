@@ -1359,7 +1359,7 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 
 /** WORKING EMBED CONTAINER **/
 .internal-embed.markdown-embed.inline-embed.is-loaded {
-  padding-left: 0 !important;
+  padding-left: 1em !important;
 }
 
 /** : Tranclusion/Embed sections */
