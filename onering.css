@@ -480,25 +480,27 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 .nav-files-container {
   margin: 0px 5px;
 }
-
-.nav-folder .nav-folder-title .nav-folder-title-content {
-  white-space: pre-wrap;
-}
-
-.nav-folder.mod-root {
+.nav-files-container .nav-folder {
   border-radius: 0.5em 2em 0.4em 0.2em;
 }
-.nav-folder.mod-root .nav-folder-children .nav-folder-children {
+.nav-files-container .nav-folder .nav-folder-title .nav-folder-title-content {
+  white-space: pre-wrap;
+  color: var(--FoldText);
+  line-height: 1.5em;
+  max-height: 3.2em;
+  text-overflow: ellipsis;
+}
+.nav-files-container .nav-folder .nav-folder-children .nav-folder-children {
   margin-left: 0;
   padding-left: 0;
   border-left: unset !important;
   border-radius: 0px;
   transition: all 400ms ease-in;
 }
-.nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title {
+.nav-files-container .nav-folder > .nav-folder-children .nav-file .nav-file-title {
   padding-left: 5px;
 }
-.nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title:after {
+.nav-files-container .nav-folder > .nav-folder-children .nav-file .nav-file-title:after {
   width: 80%;
   border: 1px solid #b71c1c;
   position: absolute;
@@ -508,130 +510,123 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
   transform: translate(-50%, 0);
   left: 50%;
 }
-.nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title.is-active {
-  /* active file increase font size and removes normal highlight marker */
+.nav-files-container .nav-folder > .nav-folder-children .nav-file .nav-file-title.is-active {
   background-color: var(--theme-color-translucent-1);
 }
-.nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title .nav-file-title-content {
+.nav-files-container .nav-folder > .nav-folder-children .nav-file .nav-file-title .nav-file-title-content {
   color: var(--FoldText);
   line-height: 1.5em;
   max-height: 3.2em;
   white-space: pre-wrap;
   text-overflow: ellipsis;
 }
-.nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title[data-path^=_] {
-  /* apply style to any child of a _ prefixed virtual file */
-  display: none;
+
+.nav-files-container > div > .nav-folder:has(.nav-folder-title[data-path^=A_]) {
+  background-color: var(--FoldA) !important;
 }
-.nav-folder.mod-root > .nav-folder-children > .nav-folder.is-collapsed > .nav-folder-title {
+.nav-files-container > div > .nav-folder .nav-folder-children .nav-folder:has(.nav-folder-title[data-path^=A_]) {
+  background-color: var(--FoldA-1) !important;
+}
+
+.nav-files-container > div > .nav-folder:has(.nav-folder-title[data-path^=B_]) {
+  background-color: var(--FoldB) !important;
+}
+.nav-files-container > div > .nav-folder .nav-folder-children .nav-folder:has(.nav-folder-title[data-path^=B_]) {
+  background-color: var(--FoldB-1) !important;
+}
+
+.nav-files-container > div > .nav-folder:has(.nav-folder-title[data-path^=C_]) {
+  background-color: var(--FoldC) !important;
+}
+.nav-files-container > div > .nav-folder .nav-folder-children .nav-folder:has(.nav-folder-title[data-path^=C_]) {
+  background-color: var(--FoldC-1) !important;
+}
+
+.nav-files-container > div > .nav-folder:has(.nav-folder-title[data-path^=D_]) {
+  background-color: var(--FoldD) !important;
+}
+.nav-files-container > div > .nav-folder .nav-folder-children .nav-folder:has(.nav-folder-title[data-path^=D_]) {
+  background-color: var(--FoldD-1) !important;
+}
+
+.nav-files-container > div > .nav-folder:has(.nav-folder-title[data-path^=Z_]) {
+  background-color: var(--FoldZ) !important;
+}
+.nav-files-container > div > .nav-folder .nav-folder-children .nav-folder:has(.nav-folder-title[data-path^=Z_]) {
+  background-color: var(--FoldZ-1) !important;
+}
+
+.nav-files-container > div > .nav-folder:has(.nav-folder-title[data-path^=Y_]) {
+  background-color: var(--FoldY) !important;
+}
+.nav-files-container > div > .nav-folder .nav-folder-children .nav-folder:has(.nav-folder-title[data-path^=Y_]) {
+  background-color: var(--FoldY-1) !important;
+}
+
+.nav-folder {
+  border-radius: 0.5em 2em 0.4em 0.2em;
+}
+.nav-folder > .nav-folder.is-collapsed > .nav-folder-title {
   border-radius: 5px;
 }
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title-content {
+.nav-folder > .nav-folder-title-content {
   padding-left: 0.5em !important;
 }
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=A] {
-  background-color: var(--FoldA);
-}
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=A] + .nav-folder-children {
-  background-color: var(--FoldA-1);
-}
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=B_] {
-  background-color: var(--FoldB);
-}
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=B_] + .nav-folder-children {
-  background-color: var(--FoldB-1);
-}
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=C] {
-  background-color: var(--FoldC);
-}
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=C] + .nav-folder-children {
-  background-color: var(--FoldC-1);
-}
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=D] {
-  background-color: var(--FoldD);
-}
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=D] + .nav-folder-children {
-  background-color: var(--FoldD-1);
-}
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=E] {
-  background-color: var(--FoldE);
-}
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=E] + .nav-folder-children {
-  background-color: var(--FoldE-1);
-}
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=F] {
-  background-color: var(--FoldF);
-}
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=F] + .nav-folder-children {
-  background-color: var(--FoldF-1);
-}
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=Y_] {
-  background-color: var(--FoldTT);
-}
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=Y_] + .nav-folder-children {
-  background-color: var(--FoldTT-1);
-}
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=Z_] {
-  background-color: var(--FoldZ);
-}
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title[data-path^=Z_] + .nav-folder-children {
-  background-color: var(--FoldZ-1);
-}
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children {
-  /* General Nav Folder Children (this is the part that expands from each top level folder) */
+.nav-folder > .nav-folder-children {
   border-radius: 0px 0px 5px 5px;
   padding: 0.1em 0.2em;
 }
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title {
-  /* Set up explorer container margins */
+.nav-folder > .nav-folder-title {
   color: var(--FoldText);
   padding-left: 0.3em !important;
   margin-top: 0.1em;
   border-radius: 0.5em 1em 0em 1px;
 }
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title > .nav-folder-collapse-indicator {
-  display: none; /* Remove collapse arrow from top level folders */
+.nav-folder > .nav-folder-title > .nav-folder-collapse-indicator {
+  display: none;
 }
 
-/* Scrollbars eliminated */
 .workspace-leaf-content[data-type=file-explorer] ::-webkit-scrollbar {
   width: 0px;
   height: 0px;
 }
 
-/* Relationship lines for 2nd, 3rd, and 4th level folders */
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-file {
+.nav-files-container .nav-file-title[data-path^=_] {
+  display: none;
+}
+
+.nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-file {
   border-left: var(--nestlinestyle1) var(--nestlinesize1) var(--nestlinecolor1);
   margin-left: 12px;
 }
 
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder {
+.nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder {
   border-left: var(--nestlinestyle1) var(--nestlinesize1) var(--nestlinecolor1);
   margin-left: 12px;
 }
 
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-file {
+.nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-file {
   border-left: var(--nestlinestyle2) var(--nestlinesize2) var(--nestlinecolor2);
   margin-left: 12px;
 }
 
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder {
+.nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder {
   border-left: var(--nestlinestyle2) var(--nestlinesize2) var(--nestlinecolor2);
   margin-left: 12px;
 }
 
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-file {
+.nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-file {
   border-left: var(--nestlinestyle3) var(--nestlinesize3) var(--nestlinecolor3);
   margin-left: 12px;
 }
 
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder {
+.nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder {
   border-left: var(--nestlinestyle3) var(--nestlinesize3) var(--nestlinecolor3);
   margin-left: 12px;
 }
 
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > *,
-.nav-folder.mod-root > .nav-folder-children > .nav-folder > * + .nav-folder-children {
+.nav-folder > .nav-folder-children > .nav-folder > *,
+.nav-folder > .nav-folder-children > .nav-folder > * + .nav-folder-children {
   margin-left: 0 !important;
 }
 
@@ -2444,4 +2439,8 @@ div[data-type=timer-view] .timer .timer-display .control h2.timer-text {
   border-radius: 0.2em 0.2em;
   margin: 0 auto;
   font-size: 5em;
+}
+
+.workspace .workspace-sidedock-vault-profile {
+  display: none !important;
 }
