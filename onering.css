@@ -1356,6 +1356,9 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 .internal-embed.markdown-embed.inline-embed.is-loaded {
   padding-left: 1em !important;
 }
+.internal-embed.markdown-embed.inline-embed.is-loaded .markdown-preview-view.markdown-rendered {
+  padding-top: 1.4em;
+}
 
 /** : Tranclusion/Embed sections */
 .internal-embed[alt*=nlk].markdown-embed {
