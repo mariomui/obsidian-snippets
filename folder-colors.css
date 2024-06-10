@@ -62,6 +62,7 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
   --Fold0-1: var(--material-color-indigo-900);
   --FoldA: var(--material-color-blue-grey-800);
   --FoldA-1: var(--material-color-blue-grey-900);
+  --FoldA-2: var(--material-color-blue-grey-700);
 
   --FoldB: var(--material-color-pink-800);
   --FoldB-1: var(--material-color-pink-900);

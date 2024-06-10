@@ -736,18 +736,6 @@ body:not(.full-file-names) .tree-item-self {
   background: unset
 }
 
-.workspace-split.mod-horizontal.mod-right-split .workspace-tabs > .workspace-tab-header-container >
-.workspace-tab-header-container-inner .workspace-tab-header-inner-icon > svg.svg-icon {
-
-  stroke-width: 3px;
-  color: var(--material-color-orange-900);
-} 
-.workspace-split.mod-horizontal.mod-right-split .workspace-tabs > .workspace-tab-header-container >
-.workspace-tab-header-container-inner .workspace-tab-header-inner-icon:hover > svg.svg-icon {
-
-  stroke-width: 4px;
-  color: var(--material-color-red-a200);
-} 
 
 /* ## Right Sidedock Top TAB top*/
 .workspace.is-right-sidedock-open

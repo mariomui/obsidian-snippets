@@ -489,6 +489,7 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
   line-height: 1.5em;
   max-height: 3.2em;
   text-overflow: ellipsis;
+  max-width: 80%;
 }
 .nav-files-container .nav-folder .nav-folder-children .nav-folder-children {
   margin-left: 0;
@@ -512,6 +513,7 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 }
 .nav-files-container .nav-folder > .nav-folder-children .nav-file .nav-file-title.is-active {
   background-color: var(--theme-color-translucent-1);
+  border-radius: 0.5em 2em 0.4em 0.2em;
 }
 .nav-files-container .nav-folder > .nav-folder-children .nav-file .nav-file-title .nav-file-title-content {
   color: var(--FoldText);
@@ -519,6 +521,10 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
   max-height: 3.2em;
   white-space: pre-wrap;
   text-overflow: ellipsis;
+  max-width: 75%;
+}
+.nav-files-container > div > .nav-file > .nav-file-title * {
+  margin-left: -1rem !important;
 }
 
 .nav-files-container > div > .nav-folder:has(.nav-folder-title[data-path^=A_]) {
@@ -628,6 +634,11 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 .nav-folder > .nav-folder-children > .nav-folder > *,
 .nav-folder > .nav-folder-children > .nav-folder > * + .nav-folder-children {
   margin-left: 0 !important;
+}
+
+.nav-folder-children {
+  background-color: var(--theme-color-translucent-1);
+  border-radius: 0.5em 2em 0.4em 0.2em;
 }
 
 .internal-query .search-result-container {
@@ -1667,6 +1678,26 @@ span[alt*=nlk].internal-embed.markdown-embed .markdown-preview-sizer.markdown-pr
 /* NAV FILE EXPLORER BACKDROP */
 .nav-files-container .tree-item.nav-folder {
   background: rgba(0, 0, 0, 0.6);
+}
+
+/* fix for missing nw icons when app refocuses on icon clicks */
+.workspace-tabs.mod-top.mod-top-left-space .workspace-tab-header-container-inner .workspace-tab-header .workspace-tab-header-inner .workspace-tab-header-inner-icon > svg.svg-icon {
+  stroke-width: 3px;
+  color: #ff9800;
+}
+
+.workspace-split.mod-horizontal.mod-right-split .workspace-tabs > .workspace-tab-header-container > .workspace-tab-header-container-inner .workspace-tab-header-inner-icon:hover > svg.svg-icon {
+  stroke-width: 3px;
+  color: #ff5252;
+}
+
+.workspace-tabs.mod-top.mod-top-left-space .workspace-tab-header-container-inner .workspace-tab-header.is-active .workspace-tab-header-inner .workspace-tab-header-inner-icon > svg.svg-icon {
+  stroke-width: 3px;
+  color: #ff5252;
+}
+
+.workspace .nav-files-container .nav-folder:has(.nav-folder-title[data-path^=_]) {
+  display: none !important;
 }
 
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
