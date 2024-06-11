@@ -533,6 +533,7 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 .nav-files-container > div > .nav-folder .nav-folder-children .nav-folder:has(.nav-folder-title[data-path^=A_]) {
   overflow: hidden;
   background-color: var(--FoldA-1) !important;
+  margin-bottom: 1px;
 }
 .nav-files-container > div > .nav-folder .nav-folder-children .nav-folder:has(.nav-folder-title[data-path^=A_]) > .nav-folder-children {
   background-color: var(--theme-color-translucent-1);
@@ -548,6 +549,7 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 .nav-files-container > div > .nav-folder .nav-folder-children .nav-folder:has(.nav-folder-title[data-path^=B_]) {
   overflow: hidden;
   background-color: var(--FoldB-1) !important;
+  margin-bottom: 1px;
 }
 .nav-files-container > div > .nav-folder .nav-folder-children .nav-folder:has(.nav-folder-title[data-path^=B_]) > .nav-folder-children {
   background-color: var(--theme-color-translucent-1);
@@ -563,6 +565,7 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 .nav-files-container > div > .nav-folder .nav-folder-children .nav-folder:has(.nav-folder-title[data-path^=C_]) {
   overflow: hidden;
   background-color: var(--FoldC-1) !important;
+  margin-bottom: 1px;
 }
 .nav-files-container > div > .nav-folder .nav-folder-children .nav-folder:has(.nav-folder-title[data-path^=C_]) > .nav-folder-children {
   background-color: var(--theme-color-translucent-1);
@@ -578,6 +581,7 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 .nav-files-container > div > .nav-folder .nav-folder-children .nav-folder:has(.nav-folder-title[data-path^=D_]) {
   overflow: hidden;
   background-color: var(--FoldD-1) !important;
+  margin-bottom: 1px;
 }
 .nav-files-container > div > .nav-folder .nav-folder-children .nav-folder:has(.nav-folder-title[data-path^=D_]) > .nav-folder-children {
   background-color: var(--theme-color-translucent-1);
@@ -593,6 +597,7 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 .nav-files-container > div > .nav-folder .nav-folder-children .nav-folder:has(.nav-folder-title[data-path^=Z_]) {
   overflow: hidden;
   background-color: var(--FoldZ-1) !important;
+  margin-bottom: 1px;
 }
 .nav-files-container > div > .nav-folder .nav-folder-children .nav-folder:has(.nav-folder-title[data-path^=Z_]) > .nav-folder-children {
   background-color: var(--theme-color-translucent-1);
@@ -608,6 +613,7 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 .nav-files-container > div > .nav-folder .nav-folder-children .nav-folder:has(.nav-folder-title[data-path^=Y_]) {
   overflow: hidden;
   background-color: var(--FoldY-1) !important;
+  margin-bottom: 1px;
 }
 .nav-files-container > div > .nav-folder .nav-folder-children .nav-folder:has(.nav-folder-title[data-path^=Y_]) > .nav-folder-children {
   background-color: var(--theme-color-translucent-1);
