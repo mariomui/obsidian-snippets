@@ -1346,7 +1346,8 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
   padding-left: 0.1em;
 }
 
-.markdown-source-view .block-language-dataview, .markdown-reading-view .block-language-dataview {
+.markdown-source-view .block-language-dataview,
+.markdown-reading-view .block-language-dataview {
   border: 2px solid var(--material-color-deep-orange);
   border-radius: 1em 1em;
   background: var(--shade);
@@ -1364,6 +1365,19 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 }
 .markdown-source-view .internal-embed.markdown-embed.is-loaded[alt*=ui-noscroll] .markdown-embed-content .markdown-preview-view.markdown-rendered.node-insert-event.show-indentation-guide .markdown-preview-sizer.markdown-preview-section {
   overflow: hidden;
+}
+.markdown-source-view .markdown-embed-content .markdown-preview-view.markdown-rendered .block-language-dataviewjs p {
+  width: 100% !important;
+  background-color: #1b5e20;
+}
+.markdown-source-view .markdown-embed-content .markdown-preview-view.markdown-rendered .block-language-dataviewjs p ul {
+  margin: 0 !important;
+}
+.markdown-source-view .markdown-embed-content .markdown-preview-view.markdown-rendered .block-language-dataviewjs > div:first-of-type {
+  background-color: #3e2723;
+}
+.markdown-source-view .markdown-embed-content .markdown-preview-view.markdown-rendered .block-language-dataviewjs > div:first-of-type ul {
+  margin-top: 0.5em;
 }
 .markdown-source-view .markdown-embed-content .markdown-preview-view.markdown-rendered .block-language-dataviewjs li:has(span.internal-embed[alt*="=$"]) ~ li:nth-child(2n+2) {
   border-top: 0.1em solid #ff5722;
