@@ -2313,6 +2313,50 @@ input.task-list-item-checkbox[type=checkbox]:checked {
   color: #f57c00;
 }
 
+.screenplay {
+  width: 70.5%;
+}
+
+.screenplay p.centered {
+  text-align: center;
+}
+
+.screenplay h2 {
+  text-align: right;
+}
+
+.screenplay > .dialogue p:not(.parenthetical):last-of-type {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.screenplay > .dialogue + p {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.screenplay > .dialogue h4 {
+  margin-top: 0em !important;
+  margin-bottom: 0em !important;
+}
+
+.screenplay > .dialogue h4 + p {
+  margin-top: 0 !important;
+}
+
+.screenplay > .dialogue h4:has(+ .parenthetical) {
+  margin: 0 auto !important;
+}
+
+.screenplay > .dialogue h4:has(+ .parenthetical) + .parenthetical {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-left: 0;
+  padding-right: 30%;
+  text-align: center;
+}
+
 .markdown-preview-view progress.mario-progress,
 .markdown-rendered progress.mario-progress,
 .markdown-source-view.is-live-preview progress.mario-progress {
