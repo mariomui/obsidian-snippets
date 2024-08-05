@@ -503,13 +503,13 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
 }
 .nav-files-container .nav-folder > .nav-folder-children .nav-file .nav-file-title:after {
   width: 80%;
-  border: 1px solid #b71c1c;
+  border-bottom: 1px solid #b71c1c;
   position: absolute;
   content: "";
   bottom: 1px;
   display: block;
   transform: translate(-50%, 0);
-  left: 50%;
+  left: 65%;
 }
 .nav-files-container .nav-folder > .nav-folder-children .nav-file .nav-file-title.is-active {
   background-color: var(--theme-color-translucent-1);
@@ -521,7 +521,6 @@ B-source: https://raw.githubusercontent.com/obsidian-community/obsidian-hub/main
   max-height: 3.2em;
   white-space: pre-wrap;
   text-overflow: ellipsis;
-  max-width: 75%;
 }
 .nav-files-container > div > .nav-file > .nav-file-title * {
   margin-left: -1rem !important;
@@ -2355,6 +2354,23 @@ input.task-list-item-checkbox[type=checkbox]:checked {
   padding-left: 0;
   padding-right: 30%;
   text-align: center;
+}
+
+.nav-files-container .nav-file-title::after {
+  content: attr(data-novel-word-count-plugin) !important;
+  flex: 1 0 auto;
+  font-size: 0.8em;
+  max-width: calc(100% - 20px);
+  min-width: 0;
+  opacity: 0.75;
+  order: 1;
+  overflow: hidden;
+  padding: 0 4px;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: right;
+  right: -3em;
 }
 
 .markdown-preview-view progress.mario-progress,
