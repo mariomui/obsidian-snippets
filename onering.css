@@ -2320,13 +2320,12 @@ input.task-list-item-checkbox[type=checkbox]:checked {
 
 .screenplay > .dialogue p:not(.parenthetical):last-of-type {
   margin: 0;
-  text-align: center;
   margin-bottom: 1em;
+  padding: 0 11%;
 }
 
 .screenplay > .dialogue + p {
   margin-top: 0 !important;
-  margin-bottom: 0 !important;
 }
 
 .screenplay > .dialogue h4 {
