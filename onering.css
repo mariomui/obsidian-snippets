@@ -3546,6 +3546,14 @@ body {
   text-align: center;
 }
 
+.screenplay {
+  width: 90%;
+}
+
+.screenplay .dialogue h4 {
+  text-align: center !important;
+}
+
 .nav-files-container .nav-file-title::after {
   content: attr(data-novel-word-count-plugin) !important;
   flex: 1 0 auto;
