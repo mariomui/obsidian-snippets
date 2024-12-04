@@ -1925,6 +1925,9 @@ span[alt*=nlk].internal-embed.markdown-embed .markdown-preview-sizer.markdown-pr
 
 /* # API specific Feature To ONLY TAKE API BETWEEN = and --- */
 /* NAME: SELECTED-TRANSCLUSION-PREVIEW CSS SNIPPET */
+.popover.hover-popover .dataview .markdown-preview-view.markdown-rendered.show-indentation-guide {
+  padding: 0;
+}
 .popover.hover-popover .markdown-embed .markdown-preview-view.markdown-rendered .markdown-preview-sizer.markdown-preview-section div:has(> h1[data-heading="-"]) ~ * {
   display: none;
 }
