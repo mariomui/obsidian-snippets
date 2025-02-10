@@ -3575,7 +3575,1609 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
   text-align: right;
-  right: -3em;
+  text-align: right;
+  padding-right: 5em;
+  text-align: right;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(0) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(1) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(2) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(3) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(4) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(5) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(6) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(7) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(8) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(9) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(10) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(11) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(12) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(13) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(14) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(15) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(16) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(17) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(18) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(19) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(20) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(21) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(22) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(23) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(24) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(25) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(26) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(27) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(28) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(29) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(30) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(31) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(32) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(33) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(34) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(35) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(36) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(37) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(38) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(39) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(40) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(41) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(42) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(43) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(44) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(45) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(46) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(47) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(48) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(49) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(50) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(51) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(52) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(53) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(54) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(55) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(56) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(57) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(58) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(59) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(60) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(61) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(62) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(63) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(64) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(65) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(66) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(67) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(68) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(69) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(70) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(71) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(72) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(73) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(74) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(75) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(76) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(77) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(78) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(79) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(80) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(81) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(82) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(83) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(84) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(85) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(86) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(87) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(88) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(89) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(90) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(91) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(92) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(93) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(94) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(95) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(96) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(97) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(98) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
+}
+
+.nav-files-container .tree-item.nav-folder:nth-child(99) .nav-folder-title[data-count][data-count]::before {
+  /* background-color: var(--background-secondary-alt); */
+  /* border-radius: 3px; */
+  color: #ff9529;
+  font-weight: bold; /* Make text bolder */
+  content: attr(data-count) " " "∩";
+  font-size: 80%;
+  padding-left: 3px;
+  text-align: right;
+  transition: opacity 100ms ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 2em;
 }
 
 .markdown-preview-view progress.mario-progress,
