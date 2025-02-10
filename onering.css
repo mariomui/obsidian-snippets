@@ -3561,7 +3561,8 @@ body {
   text-align: center !important;
 }
 
-.nav-files-container .nav-file-title::after {
+.nav-files-container .nav-folder > .nav-folder-children .nav-file .nav-file-title::after,
+.nav-folder-title .nav-files-container .nav-file-title::after {
   content: attr(data-novel-word-count-plugin) !important;
   flex: 1 0 auto;
   font-size: 0.8em;
@@ -3578,12 +3579,14 @@ body {
   text-align: right;
   padding-right: 5em;
   text-align: right;
+  right: 1em;
+  position: absolute;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(0) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3591,15 +3594,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(1) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3607,15 +3610,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(2) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #ffbe7f;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3623,15 +3626,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(3) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3639,15 +3642,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(4) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #fffdd3;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3655,15 +3658,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(5) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #d8ffc2;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3671,15 +3674,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(6) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #d9fcb1;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3687,15 +3690,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(7) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3703,15 +3706,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(8) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #776fff;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3719,15 +3722,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(9) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #ffa6ab;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3735,15 +3738,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(10) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3751,15 +3754,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(11) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #ff6a86;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3767,15 +3770,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(12) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #ffdde0;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3783,15 +3786,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(13) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #637cff;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3799,15 +3802,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(14) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #fec1e3;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3815,15 +3818,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(15) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #def7c0;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3831,15 +3834,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(16) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3847,15 +3850,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(17) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #ff89e0;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3863,15 +3866,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(18) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #92dfa5;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3879,15 +3882,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(19) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #d87fcf;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3895,15 +3898,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(20) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3911,15 +3914,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(21) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #f2fdb5;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3927,15 +3930,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(22) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #f8ffda;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3943,15 +3946,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(23) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #ffd57f;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3959,15 +3962,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(24) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #f3ffda;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3975,15 +3978,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(25) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #d3f8ce;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -3991,15 +3994,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(26) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4007,15 +4010,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(27) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4023,15 +4026,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(28) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #e5fce8;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4039,15 +4042,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(29) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #9bedb4;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4055,15 +4058,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(30) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #f58e8e;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4071,15 +4074,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(31) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #f8fee6;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4087,15 +4090,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(32) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #e9ffc5;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4103,15 +4106,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(33) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4119,15 +4122,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(34) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4135,15 +4138,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(35) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #f4c0bd;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4151,15 +4154,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(36) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #ebffd4;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4167,15 +4170,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(37) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #e6fdc6;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4183,15 +4186,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(38) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #ebff5f;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4199,15 +4202,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(39) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #ff9d9b;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4215,15 +4218,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(40) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #ff639c;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4231,15 +4234,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(41) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #fdf4f4;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4247,15 +4250,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(42) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4263,15 +4266,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(43) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4279,15 +4282,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(44) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4295,15 +4298,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(45) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #ffe267;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4311,15 +4314,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(46) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #ffbaa5;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4327,15 +4330,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(47) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #f7bfe4;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4343,15 +4346,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(48) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #a5ff9b;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4359,15 +4362,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(49) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4375,15 +4378,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(50) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #f7f1e2;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4391,15 +4394,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(51) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #d6ffd9;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4407,15 +4410,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(52) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #ffc8e0;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4423,15 +4426,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(53) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4439,15 +4442,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(54) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4455,15 +4458,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(55) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4471,15 +4474,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(56) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #fff2eb;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4487,15 +4490,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(57) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #feffa6;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4503,15 +4506,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(58) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4519,15 +4522,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(59) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #ebb6a7;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4535,15 +4538,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(60) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #ffe7df;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4551,15 +4554,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(61) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4567,15 +4570,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(62) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #fa88bb;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4583,15 +4586,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(63) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #fbdddb;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4599,15 +4602,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(64) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #f0fdea;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4615,15 +4618,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(65) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #f5ffc8;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4631,15 +4634,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(66) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4647,15 +4650,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(67) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #ff85d5;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4663,15 +4666,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(68) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #e2f7d5;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4679,15 +4682,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(69) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #eb755d;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4695,15 +4698,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(70) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4711,15 +4714,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(71) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4727,15 +4730,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(72) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #8febc5;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4743,15 +4746,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(73) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #f0f5d2;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4759,15 +4762,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(74) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #fcf8e7;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4775,15 +4778,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(75) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #f9fdf9;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4791,15 +4794,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(76) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4807,15 +4810,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(77) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #fff0df;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4823,15 +4826,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(78) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #84ffc8;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4839,15 +4842,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(79) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #fcc1b2;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4855,15 +4858,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(80) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #fff5c5;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4871,15 +4874,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(81) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #f3ebd2;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4887,15 +4890,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(82) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4903,15 +4906,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(83) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4919,15 +4922,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(84) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #83ff51;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4935,15 +4938,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(85) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4951,15 +4954,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(86) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4967,15 +4970,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(87) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #52f39e;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4983,15 +4986,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(88) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #fdfffd;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -4999,15 +5002,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(89) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #fefefd;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -5015,15 +5018,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(90) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -5031,15 +5034,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(91) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #f5fff9;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -5047,15 +5050,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(92) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #fefbfb;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -5063,15 +5066,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(93) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #bd42ff;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -5079,15 +5082,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(94) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #fff5d0;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -5095,15 +5098,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(95) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #beff72;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -5111,15 +5114,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(96) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #faede6;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -5127,15 +5130,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(97) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: white;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -5143,15 +5146,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(98) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #f9cfbb;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -5159,15 +5162,15 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .nav-files-container .tree-item.nav-folder:nth-child(99) .nav-folder-title[data-count][data-count]::before {
   /* background-color: var(--background-secondary-alt); */
   /* border-radius: 3px; */
-  color: #ff9529;
+  color: #f5fce9;
   font-weight: bold; /* Make text bolder */
   content: attr(data-count) " " "∩";
   font-size: 80%;
@@ -5175,9 +5178,9 @@ body {
   text-align: right;
   transition: opacity 100ms ease-in-out;
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 2em;
+  transform: translateY(-85%);
+  top: 85%;
+  right: 1rem;
 }
 
 .markdown-preview-view progress.mario-progress,
