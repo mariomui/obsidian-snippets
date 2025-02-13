@@ -16,12 +16,12 @@
   display: none;
 }
 
-.workspace-leaf-content
+/* .workspace-leaf-content
   .floating-toc-div.floating-left
   ~ .markdown-reading-view
   .markdown-preview-view {
   padding-left: 0.1em;
-}
+} */
 
 
 /*** preview mode end****/
@@ -37,13 +37,14 @@
   justify-content: center;
 }
 
+/* level 2 */
+/* 
 .markdown-source-view .cm-contentContainer {
   border-radius: 1.5em 1.5em;
-  /* level 2 */
   background: var(--shade);
   min-height: 50vh;
   margin: 0 1em;
-}
+} */
 
 
  /* # H1 styling Source */
@@ -119,11 +120,11 @@
 }
 
 /* # Bold Text in dark mode must be more visible */
-.theme-dark {
+/* .theme-dark {
   --bold-weight: 700;
   --bold-color: var(--material-color-brown-300);
 }
 .theme-light {
   --bold-color: #010f59;
-}
+} */
 
