@@ -12,22 +12,22 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
 
 :root {
   /* folder colours */
-  --Fold0: #d32f2fCC;
-  --Fold1: #c2185bCC;
-  --Fold2: #7b1fa2CC;
-  --Fold3: #512da8CC;
-  --Fold4: #303f9fCC;
-  --Fold5: #1976d2CC;
-  --Fold6: #0288d1CC;
-  --Fold7: #0097a7CC;
-  --Fold8: #00796bCC;
-  --Fold9: #388e3cCC;
-  --FoldA: #689f38CC;
-  --FoldB: #afb42bCC;
-  --FoldC: #f9ab25CC;
-  --FoldD: #ff8f00CC;
-  --FoldE: #ef6c00CC;
-  --FoldF: #d84315CC;
+  --Fold0: #d32f2fcc;
+  --Fold1: #c2185bcc;
+  --Fold2: #7b1fa2cc;
+  --Fold3: #512da8cc;
+  --Fold4: #303f9fcc;
+  --Fold5: #1976d2cc;
+  --Fold6: #0288d1cc;
+  --Fold7: #0097a7cc;
+  --Fold8: #00796bcc;
+  --Fold9: #388e3ccc;
+  --FoldA: #689f38cc;
+  --FoldB: #afb42bcc;
+  --FoldC: #f9ab25cc;
+  --FoldD: #ff8f00cc;
+  --FoldE: #ef6c00cc;
+  --FoldF: #d84315cc;
 
   /* line styles for nesting indicators */
   --nestlinesize1: solid;
@@ -46,7 +46,6 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
 .theme-dark {
   /* --FoldText: #cbcbcb; */
   --FoldText: var(--material-color-orange-300);
-
 
   --Fold1: #f31f7448;
   --Fold2: #be25ff49;
